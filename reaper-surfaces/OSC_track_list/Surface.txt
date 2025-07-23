@@ -145,9 +145,9 @@ Widget RecordArm1
     FB_Processor /RecordArm1
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR1
-    Control /TrackOutputMeterMaxPeakLR1
-    FB_Processor /TrackOutputMeterMaxPeakLR1
+Widget VUMeter1
+    Control /VUMeter1
+    FB_Processor /VUMeter1
 WidgetEnd
 
 Widget FXParam1
@@ -236,9 +236,9 @@ Widget RecordArm2
     FB_Processor /RecordArm2
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR2
-    Control /TrackOutputMeterMaxPeakLR2
-    FB_Processor /TrackOutputMeterMaxPeakLR2
+Widget VUMeter2
+    Control /VUMeter2
+    FB_Processor /VUMeter2
 WidgetEnd
 
 Widget FXParam2
@@ -327,9 +327,9 @@ Widget RecordArm3
     FB_Processor /RecordArm3
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR3
-    Control /TrackOutputMeterMaxPeakLR3
-    FB_Processor /TrackOutputMeterMaxPeakLR3
+Widget VUMeter3
+    Control /VUMeter3
+    FB_Processor /VUMeter3
 WidgetEnd
 
 Widget FXParam3
@@ -418,9 +418,9 @@ Widget RecordArm4
     FB_Processor /RecordArm4
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR4
-    Control /TrackOutputMeterMaxPeakLR4
-    FB_Processor /TrackOutputMeterMaxPeakLR4
+Widget VUMeter4
+    Control /VUMeter4
+    FB_Processor /VUMeter4
 WidgetEnd
 
 Widget FXParam4
@@ -509,9 +509,9 @@ Widget RecordArm5
     FB_Processor /RecordArm5
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR5
-    Control /TrackOutputMeterMaxPeakLR5
-    FB_Processor /TrackOutputMeterMaxPeakLR5
+Widget VUMeter5
+    Control /VUMeter5
+    FB_Processor /VUMeter5
 WidgetEnd
 
 Widget FXParam5
@@ -600,9 +600,9 @@ Widget RecordArm6
     FB_Processor /RecordArm6
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR6
-    Control /TrackOutputMeterMaxPeakLR6
-    FB_Processor /TrackOutputMeterMaxPeakLR6
+Widget VUMeter6
+    Control /VUMeter6
+    FB_Processor /VUMeter6
 WidgetEnd
 
 Widget FXParam6
@@ -691,9 +691,9 @@ Widget RecordArm7
     FB_Processor /RecordArm7
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR7
-    Control /TrackOutputMeterMaxPeakLR7
-    FB_Processor /TrackOutputMeterMaxPeakLR7
+Widget VUMeter7
+    Control /VUMeter7
+    FB_Processor /VUMeter7
 WidgetEnd
 
 Widget FXParam7
@@ -782,9 +782,9 @@ Widget RecordArm8
     FB_Processor /RecordArm8
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR8
-    Control /TrackOutputMeterMaxPeakLR8
-    FB_Processor /TrackOutputMeterMaxPeakLR8
+Widget VUMeter8
+    Control /VUMeter8
+    FB_Processor /VUMeter8
 WidgetEnd
 
 Widget FXParam8
@@ -873,9 +873,9 @@ Widget RecordArm9
     FB_Processor /RecordArm9
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR9
-    Control /TrackOutputMeterMaxPeakLR9
-    FB_Processor /TrackOutputMeterMaxPeakLR9
+Widget VUMeter9
+    Control /VUMeter9
+    FB_Processor /VUMeter9
 WidgetEnd
 
 Widget FXParam9
@@ -964,9 +964,9 @@ Widget RecordArm10
     FB_Processor /RecordArm10
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR10
-    Control /TrackOutputMeterMaxPeakLR10
-    FB_Processor /TrackOutputMeterMaxPeakLR10
+Widget VUMeter10
+    Control /VUMeter10
+    FB_Processor /VUMeter10
 WidgetEnd
 
 Widget FXParam10
@@ -1055,9 +1055,9 @@ Widget RecordArm11
     FB_Processor /RecordArm11
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR11
-    Control /TrackOutputMeterMaxPeakLR11
-    FB_Processor /TrackOutputMeterMaxPeakLR11
+Widget VUMeter11
+    Control /VUMeter11
+    FB_Processor /VUMeter11
 WidgetEnd
 
 Widget FXParam11
@@ -1146,9 +1146,9 @@ Widget RecordArm12
     FB_Processor /RecordArm12
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR12
-    Control /TrackOutputMeterMaxPeakLR12
-    FB_Processor /TrackOutputMeterMaxPeakLR12
+Widget VUMeter12
+    Control /VUMeter12
+    FB_Processor /VUMeter12
 WidgetEnd
 
 Widget FXParam12
@@ -1237,9 +1237,9 @@ Widget RecordArm13
     FB_Processor /RecordArm13
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR13
-    Control /TrackOutputMeterMaxPeakLR13
-    FB_Processor /TrackOutputMeterMaxPeakLR13
+Widget VUMeter13
+    Control /VUMeter13
+    FB_Processor /VUMeter13
 WidgetEnd
 
 Widget FXParam13
@@ -1328,9 +1328,9 @@ Widget RecordArm14
     FB_Processor /RecordArm14
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR14
-    Control /TrackOutputMeterMaxPeakLR14
-    FB_Processor /TrackOutputMeterMaxPeakLR14
+Widget VUMeter14
+    Control /VUMeter14
+    FB_Processor /VUMeter14
 WidgetEnd
 
 Widget FXParam14
@@ -1419,9 +1419,9 @@ Widget RecordArm15
     FB_Processor /RecordArm15
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR15
-    Control /TrackOutputMeterMaxPeakLR15
-    FB_Processor /TrackOutputMeterMaxPeakLR15
+Widget VUMeter15
+    Control /VUMeter15
+    FB_Processor /VUMeter15
 WidgetEnd
 
 Widget FXParam15
@@ -1510,9 +1510,9 @@ Widget RecordArm16
     FB_Processor /RecordArm16
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR16
-    Control /TrackOutputMeterMaxPeakLR16
-    FB_Processor /TrackOutputMeterMaxPeakLR16
+Widget VUMeter16
+    Control /VUMeter16
+    FB_Processor /VUMeter16
 WidgetEnd
 
 Widget FXParam16
@@ -1601,9 +1601,9 @@ Widget RecordArm17
     FB_Processor /RecordArm17
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR17
-    Control /TrackOutputMeterMaxPeakLR17
-    FB_Processor /TrackOutputMeterMaxPeakLR17
+Widget VUMeter17
+    Control /VUMeter17
+    FB_Processor /VUMeter17
 WidgetEnd
 
 Widget FXParam17
@@ -1692,9 +1692,9 @@ Widget RecordArm18
     FB_Processor /RecordArm18
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR18
-    Control /TrackOutputMeterMaxPeakLR18
-    FB_Processor /TrackOutputMeterMaxPeakLR18
+Widget VUMeter18
+    Control /VUMeter18
+    FB_Processor /VUMeter18
 WidgetEnd
 
 Widget FXParam18
@@ -1783,9 +1783,9 @@ Widget RecordArm19
     FB_Processor /RecordArm19
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR19
-    Control /TrackOutputMeterMaxPeakLR19
-    FB_Processor /TrackOutputMeterMaxPeakLR19
+Widget VUMeter19
+    Control /VUMeter19
+    FB_Processor /VUMeter19
 WidgetEnd
 
 Widget FXParam19
@@ -1874,9 +1874,9 @@ Widget RecordArm20
     FB_Processor /RecordArm20
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR20
-    Control /TrackOutputMeterMaxPeakLR20
-    FB_Processor /TrackOutputMeterMaxPeakLR20
+Widget VUMeter20
+    Control /VUMeter20
+    FB_Processor /VUMeter20
 WidgetEnd
 
 Widget FXParam20
@@ -1965,9 +1965,9 @@ Widget RecordArm21
     FB_Processor /RecordArm21
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR21
-    Control /TrackOutputMeterMaxPeakLR21
-    FB_Processor /TrackOutputMeterMaxPeakLR21
+Widget VUMeter21
+    Control /VUMeter21
+    FB_Processor /VUMeter21
 WidgetEnd
 
 Widget FXParam21
@@ -2056,9 +2056,9 @@ Widget RecordArm22
     FB_Processor /RecordArm22
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR22
-    Control /TrackOutputMeterMaxPeakLR22
-    FB_Processor /TrackOutputMeterMaxPeakLR22
+Widget VUMeter22
+    Control /VUMeter22
+    FB_Processor /VUMeter22
 WidgetEnd
 
 Widget FXParam22
@@ -2147,9 +2147,9 @@ Widget RecordArm23
     FB_Processor /RecordArm23
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR23
-    Control /TrackOutputMeterMaxPeakLR23
-    FB_Processor /TrackOutputMeterMaxPeakLR23
+Widget VUMeter23
+    Control /VUMeter23
+    FB_Processor /VUMeter23
 WidgetEnd
 
 Widget FXParam23
@@ -2238,9 +2238,9 @@ Widget RecordArm24
     FB_Processor /RecordArm24
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR24
-    Control /TrackOutputMeterMaxPeakLR24
-    FB_Processor /TrackOutputMeterMaxPeakLR24
+Widget VUMeter24
+    Control /VUMeter24
+    FB_Processor /VUMeter24
 WidgetEnd
 
 Widget FXParam24
@@ -2329,9 +2329,9 @@ Widget RecordArm25
     FB_Processor /RecordArm25
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR25
-    Control /TrackOutputMeterMaxPeakLR25
-    FB_Processor /TrackOutputMeterMaxPeakLR25
+Widget VUMeter25
+    Control /VUMeter25
+    FB_Processor /VUMeter25
 WidgetEnd
 
 Widget FXParam25
@@ -2420,9 +2420,9 @@ Widget RecordArm26
     FB_Processor /RecordArm26
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR26
-    Control /TrackOutputMeterMaxPeakLR26
-    FB_Processor /TrackOutputMeterMaxPeakLR26
+Widget VUMeter26
+    Control /VUMeter26
+    FB_Processor /VUMeter26
 WidgetEnd
 
 Widget FXParam26
@@ -2511,9 +2511,9 @@ Widget RecordArm27
     FB_Processor /RecordArm27
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR27
-    Control /TrackOutputMeterMaxPeakLR27
-    FB_Processor /TrackOutputMeterMaxPeakLR27
+Widget VUMeter27
+    Control /VUMeter27
+    FB_Processor /VUMeter27
 WidgetEnd
 
 Widget FXParam27
@@ -2602,9 +2602,9 @@ Widget RecordArm28
     FB_Processor /RecordArm28
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR28
-    Control /TrackOutputMeterMaxPeakLR28
-    FB_Processor /TrackOutputMeterMaxPeakLR28
+Widget VUMeter28
+    Control /VUMeter28
+    FB_Processor /VUMeter28
 WidgetEnd
 
 Widget FXParam28
@@ -2693,9 +2693,9 @@ Widget RecordArm29
     FB_Processor /RecordArm29
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR29
-    Control /TrackOutputMeterMaxPeakLR29
-    FB_Processor /TrackOutputMeterMaxPeakLR29
+Widget VUMeter29
+    Control /VUMeter29
+    FB_Processor /VUMeter29
 WidgetEnd
 
 Widget FXParam29
@@ -2784,9 +2784,9 @@ Widget RecordArm30
     FB_Processor /RecordArm30
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR30
-    Control /TrackOutputMeterMaxPeakLR30
-    FB_Processor /TrackOutputMeterMaxPeakLR30
+Widget VUMeter30
+    Control /VUMeter30
+    FB_Processor /VUMeter30
 WidgetEnd
 
 Widget FXParam30
@@ -2875,9 +2875,9 @@ Widget RecordArm31
     FB_Processor /RecordArm31
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR31
-    Control /TrackOutputMeterMaxPeakLR31
-    FB_Processor /TrackOutputMeterMaxPeakLR31
+Widget VUMeter31
+    Control /VUMeter31
+    FB_Processor /VUMeter31
 WidgetEnd
 
 Widget FXParam31
@@ -2966,9 +2966,9 @@ Widget RecordArm32
     FB_Processor /RecordArm32
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR32
-    Control /TrackOutputMeterMaxPeakLR32
-    FB_Processor /TrackOutputMeterMaxPeakLR32
+Widget VUMeter32
+    Control /VUMeter32
+    FB_Processor /VUMeter32
 WidgetEnd
 
 Widget FXParam32
@@ -3057,9 +3057,9 @@ Widget RecordArm33
     FB_Processor /RecordArm33
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR33
-    Control /TrackOutputMeterMaxPeakLR33
-    FB_Processor /TrackOutputMeterMaxPeakLR33
+Widget VUMeter33
+    Control /VUMeter33
+    FB_Processor /VUMeter33
 WidgetEnd
 
 Widget FXParam33
@@ -3148,9 +3148,9 @@ Widget RecordArm34
     FB_Processor /RecordArm34
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR34
-    Control /TrackOutputMeterMaxPeakLR34
-    FB_Processor /TrackOutputMeterMaxPeakLR34
+Widget VUMeter34
+    Control /VUMeter34
+    FB_Processor /VUMeter34
 WidgetEnd
 
 Widget FXParam34
@@ -3239,9 +3239,9 @@ Widget RecordArm35
     FB_Processor /RecordArm35
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR35
-    Control /TrackOutputMeterMaxPeakLR35
-    FB_Processor /TrackOutputMeterMaxPeakLR35
+Widget VUMeter35
+    Control /VUMeter35
+    FB_Processor /VUMeter35
 WidgetEnd
 
 Widget FXParam35
@@ -3330,9 +3330,9 @@ Widget RecordArm36
     FB_Processor /RecordArm36
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR36
-    Control /TrackOutputMeterMaxPeakLR36
-    FB_Processor /TrackOutputMeterMaxPeakLR36
+Widget VUMeter36
+    Control /VUMeter36
+    FB_Processor /VUMeter36
 WidgetEnd
 
 Widget FXParam36
@@ -3421,9 +3421,9 @@ Widget RecordArm37
     FB_Processor /RecordArm37
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR37
-    Control /TrackOutputMeterMaxPeakLR37
-    FB_Processor /TrackOutputMeterMaxPeakLR37
+Widget VUMeter37
+    Control /VUMeter37
+    FB_Processor /VUMeter37
 WidgetEnd
 
 Widget FXParam37
@@ -3512,9 +3512,9 @@ Widget RecordArm38
     FB_Processor /RecordArm38
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR38
-    Control /TrackOutputMeterMaxPeakLR38
-    FB_Processor /TrackOutputMeterMaxPeakLR38
+Widget VUMeter38
+    Control /VUMeter38
+    FB_Processor /VUMeter38
 WidgetEnd
 
 Widget FXParam38
@@ -3603,9 +3603,9 @@ Widget RecordArm39
     FB_Processor /RecordArm39
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR39
-    Control /TrackOutputMeterMaxPeakLR39
-    FB_Processor /TrackOutputMeterMaxPeakLR39
+Widget VUMeter39
+    Control /VUMeter39
+    FB_Processor /VUMeter39
 WidgetEnd
 
 Widget FXParam39
@@ -3694,9 +3694,9 @@ Widget RecordArm40
     FB_Processor /RecordArm40
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR40
-    Control /TrackOutputMeterMaxPeakLR40
-    FB_Processor /TrackOutputMeterMaxPeakLR40
+Widget VUMeter40
+    Control /VUMeter40
+    FB_Processor /VUMeter40
 WidgetEnd
 
 Widget FXParam40
@@ -3785,9 +3785,9 @@ Widget RecordArm41
     FB_Processor /RecordArm41
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR41
-    Control /TrackOutputMeterMaxPeakLR41
-    FB_Processor /TrackOutputMeterMaxPeakLR41
+Widget VUMeter41
+    Control /VUMeter41
+    FB_Processor /VUMeter41
 WidgetEnd
 
 Widget FXParam41
@@ -3876,9 +3876,9 @@ Widget RecordArm42
     FB_Processor /RecordArm42
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR42
-    Control /TrackOutputMeterMaxPeakLR42
-    FB_Processor /TrackOutputMeterMaxPeakLR42
+Widget VUMeter42
+    Control /VUMeter42
+    FB_Processor /VUMeter42
 WidgetEnd
 
 Widget FXParam42
@@ -3967,9 +3967,9 @@ Widget RecordArm43
     FB_Processor /RecordArm43
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR43
-    Control /TrackOutputMeterMaxPeakLR43
-    FB_Processor /TrackOutputMeterMaxPeakLR43
+Widget VUMeter43
+    Control /VUMeter43
+    FB_Processor /VUMeter43
 WidgetEnd
 
 Widget FXParam43
@@ -4058,9 +4058,9 @@ Widget RecordArm44
     FB_Processor /RecordArm44
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR44
-    Control /TrackOutputMeterMaxPeakLR44
-    FB_Processor /TrackOutputMeterMaxPeakLR44
+Widget VUMeter44
+    Control /VUMeter44
+    FB_Processor /VUMeter44
 WidgetEnd
 
 Widget FXParam44
@@ -4149,9 +4149,9 @@ Widget RecordArm45
     FB_Processor /RecordArm45
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR45
-    Control /TrackOutputMeterMaxPeakLR45
-    FB_Processor /TrackOutputMeterMaxPeakLR45
+Widget VUMeter45
+    Control /VUMeter45
+    FB_Processor /VUMeter45
 WidgetEnd
 
 Widget FXParam45
@@ -4240,9 +4240,9 @@ Widget RecordArm46
     FB_Processor /RecordArm46
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR46
-    Control /TrackOutputMeterMaxPeakLR46
-    FB_Processor /TrackOutputMeterMaxPeakLR46
+Widget VUMeter46
+    Control /VUMeter46
+    FB_Processor /VUMeter46
 WidgetEnd
 
 Widget FXParam46
@@ -4331,9 +4331,9 @@ Widget RecordArm47
     FB_Processor /RecordArm47
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR47
-    Control /TrackOutputMeterMaxPeakLR47
-    FB_Processor /TrackOutputMeterMaxPeakLR47
+Widget VUMeter47
+    Control /VUMeter47
+    FB_Processor /VUMeter47
 WidgetEnd
 
 Widget FXParam47
@@ -4422,9 +4422,9 @@ Widget RecordArm48
     FB_Processor /RecordArm48
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR48
-    Control /TrackOutputMeterMaxPeakLR48
-    FB_Processor /TrackOutputMeterMaxPeakLR48
+Widget VUMeter48
+    Control /VUMeter48
+    FB_Processor /VUMeter48
 WidgetEnd
 
 Widget FXParam48
@@ -4513,9 +4513,9 @@ Widget RecordArm49
     FB_Processor /RecordArm49
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR49
-    Control /TrackOutputMeterMaxPeakLR49
-    FB_Processor /TrackOutputMeterMaxPeakLR49
+Widget VUMeter49
+    Control /VUMeter49
+    FB_Processor /VUMeter49
 WidgetEnd
 
 Widget FXParam49
@@ -4604,9 +4604,9 @@ Widget RecordArm50
     FB_Processor /RecordArm50
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR50
-    Control /TrackOutputMeterMaxPeakLR50
-    FB_Processor /TrackOutputMeterMaxPeakLR50
+Widget VUMeter50
+    Control /VUMeter50
+    FB_Processor /VUMeter50
 WidgetEnd
 
 Widget FXParam50
@@ -4695,9 +4695,9 @@ Widget RecordArm51
     FB_Processor /RecordArm51
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR51
-    Control /TrackOutputMeterMaxPeakLR51
-    FB_Processor /TrackOutputMeterMaxPeakLR51
+Widget VUMeter51
+    Control /VUMeter51
+    FB_Processor /VUMeter51
 WidgetEnd
 
 Widget FXParam51
@@ -4786,9 +4786,9 @@ Widget RecordArm52
     FB_Processor /RecordArm52
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR52
-    Control /TrackOutputMeterMaxPeakLR52
-    FB_Processor /TrackOutputMeterMaxPeakLR52
+Widget VUMeter52
+    Control /VUMeter52
+    FB_Processor /VUMeter52
 WidgetEnd
 
 Widget FXParam52
@@ -4877,9 +4877,9 @@ Widget RecordArm53
     FB_Processor /RecordArm53
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR53
-    Control /TrackOutputMeterMaxPeakLR53
-    FB_Processor /TrackOutputMeterMaxPeakLR53
+Widget VUMeter53
+    Control /VUMeter53
+    FB_Processor /VUMeter53
 WidgetEnd
 
 Widget FXParam53
@@ -4968,9 +4968,9 @@ Widget RecordArm54
     FB_Processor /RecordArm54
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR54
-    Control /TrackOutputMeterMaxPeakLR54
-    FB_Processor /TrackOutputMeterMaxPeakLR54
+Widget VUMeter54
+    Control /VUMeter54
+    FB_Processor /VUMeter54
 WidgetEnd
 
 Widget FXParam54
@@ -5059,9 +5059,9 @@ Widget RecordArm55
     FB_Processor /RecordArm55
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR55
-    Control /TrackOutputMeterMaxPeakLR55
-    FB_Processor /TrackOutputMeterMaxPeakLR55
+Widget VUMeter55
+    Control /VUMeter55
+    FB_Processor /VUMeter55
 WidgetEnd
 
 Widget FXParam55
@@ -5150,9 +5150,9 @@ Widget RecordArm56
     FB_Processor /RecordArm56
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR56
-    Control /TrackOutputMeterMaxPeakLR56
-    FB_Processor /TrackOutputMeterMaxPeakLR56
+Widget VUMeter56
+    Control /VUMeter56
+    FB_Processor /VUMeter56
 WidgetEnd
 
 Widget FXParam56
@@ -5241,9 +5241,9 @@ Widget RecordArm57
     FB_Processor /RecordArm57
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR57
-    Control /TrackOutputMeterMaxPeakLR57
-    FB_Processor /TrackOutputMeterMaxPeakLR57
+Widget VUMeter57
+    Control /VUMeter57
+    FB_Processor /VUMeter57
 WidgetEnd
 
 Widget FXParam57
@@ -5332,9 +5332,9 @@ Widget RecordArm58
     FB_Processor /RecordArm58
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR58
-    Control /TrackOutputMeterMaxPeakLR58
-    FB_Processor /TrackOutputMeterMaxPeakLR58
+Widget VUMeter58
+    Control /VUMeter58
+    FB_Processor /VUMeter58
 WidgetEnd
 
 Widget FXParam58
@@ -5423,9 +5423,9 @@ Widget RecordArm59
     FB_Processor /RecordArm59
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR59
-    Control /TrackOutputMeterMaxPeakLR59
-    FB_Processor /TrackOutputMeterMaxPeakLR59
+Widget VUMeter59
+    Control /VUMeter59
+    FB_Processor /VUMeter59
 WidgetEnd
 
 Widget FXParam59
@@ -5514,9 +5514,9 @@ Widget RecordArm60
     FB_Processor /RecordArm60
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR60
-    Control /TrackOutputMeterMaxPeakLR60
-    FB_Processor /TrackOutputMeterMaxPeakLR60
+Widget VUMeter60
+    Control /VUMeter60
+    FB_Processor /VUMeter60
 WidgetEnd
 
 Widget FXParam60
@@ -5605,9 +5605,9 @@ Widget RecordArm61
     FB_Processor /RecordArm61
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR61
-    Control /TrackOutputMeterMaxPeakLR61
-    FB_Processor /TrackOutputMeterMaxPeakLR61
+Widget VUMeter61
+    Control /VUMeter61
+    FB_Processor /VUMeter61
 WidgetEnd
 
 Widget FXParam61
@@ -5696,9 +5696,9 @@ Widget RecordArm62
     FB_Processor /RecordArm62
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR62
-    Control /TrackOutputMeterMaxPeakLR62
-    FB_Processor /TrackOutputMeterMaxPeakLR62
+Widget VUMeter62
+    Control /VUMeter62
+    FB_Processor /VUMeter62
 WidgetEnd
 
 Widget FXParam62
@@ -5787,9 +5787,9 @@ Widget RecordArm63
     FB_Processor /RecordArm63
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR63
-    Control /TrackOutputMeterMaxPeakLR63
-    FB_Processor /TrackOutputMeterMaxPeakLR63
+Widget VUMeter63
+    Control /VUMeter63
+    FB_Processor /VUMeter63
 WidgetEnd
 
 Widget FXParam63
@@ -5878,9 +5878,9 @@ Widget RecordArm64
     FB_Processor /RecordArm64
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR64
-    Control /TrackOutputMeterMaxPeakLR64
-    FB_Processor /TrackOutputMeterMaxPeakLR64
+Widget VUMeter64
+    Control /VUMeter64
+    FB_Processor /VUMeter64
 WidgetEnd
 
 Widget FXParam64
@@ -5969,9 +5969,9 @@ Widget RecordArm65
     FB_Processor /RecordArm65
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR65
-    Control /TrackOutputMeterMaxPeakLR65
-    FB_Processor /TrackOutputMeterMaxPeakLR65
+Widget VUMeter65
+    Control /VUMeter65
+    FB_Processor /VUMeter65
 WidgetEnd
 
 Widget FXParam65
@@ -6060,9 +6060,9 @@ Widget RecordArm66
     FB_Processor /RecordArm66
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR66
-    Control /TrackOutputMeterMaxPeakLR66
-    FB_Processor /TrackOutputMeterMaxPeakLR66
+Widget VUMeter66
+    Control /VUMeter66
+    FB_Processor /VUMeter66
 WidgetEnd
 
 Widget FXParam66
@@ -6151,9 +6151,9 @@ Widget RecordArm67
     FB_Processor /RecordArm67
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR67
-    Control /TrackOutputMeterMaxPeakLR67
-    FB_Processor /TrackOutputMeterMaxPeakLR67
+Widget VUMeter67
+    Control /VUMeter67
+    FB_Processor /VUMeter67
 WidgetEnd
 
 Widget FXParam67
@@ -6242,9 +6242,9 @@ Widget RecordArm68
     FB_Processor /RecordArm68
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR68
-    Control /TrackOutputMeterMaxPeakLR68
-    FB_Processor /TrackOutputMeterMaxPeakLR68
+Widget VUMeter68
+    Control /VUMeter68
+    FB_Processor /VUMeter68
 WidgetEnd
 
 Widget FXParam68
@@ -6333,9 +6333,9 @@ Widget RecordArm69
     FB_Processor /RecordArm69
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR69
-    Control /TrackOutputMeterMaxPeakLR69
-    FB_Processor /TrackOutputMeterMaxPeakLR69
+Widget VUMeter69
+    Control /VUMeter69
+    FB_Processor /VUMeter69
 WidgetEnd
 
 Widget FXParam69
@@ -6424,9 +6424,9 @@ Widget RecordArm70
     FB_Processor /RecordArm70
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR70
-    Control /TrackOutputMeterMaxPeakLR70
-    FB_Processor /TrackOutputMeterMaxPeakLR70
+Widget VUMeter70
+    Control /VUMeter70
+    FB_Processor /VUMeter70
 WidgetEnd
 
 Widget FXParam70
@@ -6515,9 +6515,9 @@ Widget RecordArm71
     FB_Processor /RecordArm71
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR71
-    Control /TrackOutputMeterMaxPeakLR71
-    FB_Processor /TrackOutputMeterMaxPeakLR71
+Widget VUMeter71
+    Control /VUMeter71
+    FB_Processor /VUMeter71
 WidgetEnd
 
 Widget FXParam71
@@ -6606,9 +6606,9 @@ Widget RecordArm72
     FB_Processor /RecordArm72
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR72
-    Control /TrackOutputMeterMaxPeakLR72
-    FB_Processor /TrackOutputMeterMaxPeakLR72
+Widget VUMeter72
+    Control /VUMeter72
+    FB_Processor /VUMeter72
 WidgetEnd
 
 Widget FXParam72
@@ -6697,9 +6697,9 @@ Widget RecordArm73
     FB_Processor /RecordArm73
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR73
-    Control /TrackOutputMeterMaxPeakLR73
-    FB_Processor /TrackOutputMeterMaxPeakLR73
+Widget VUMeter73
+    Control /VUMeter73
+    FB_Processor /VUMeter73
 WidgetEnd
 
 Widget FXParam73
@@ -6788,9 +6788,9 @@ Widget RecordArm74
     FB_Processor /RecordArm74
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR74
-    Control /TrackOutputMeterMaxPeakLR74
-    FB_Processor /TrackOutputMeterMaxPeakLR74
+Widget VUMeter74
+    Control /VUMeter74
+    FB_Processor /VUMeter74
 WidgetEnd
 
 Widget FXParam74
@@ -6879,9 +6879,9 @@ Widget RecordArm75
     FB_Processor /RecordArm75
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR75
-    Control /TrackOutputMeterMaxPeakLR75
-    FB_Processor /TrackOutputMeterMaxPeakLR75
+Widget VUMeter75
+    Control /VUMeter75
+    FB_Processor /VUMeter75
 WidgetEnd
 
 Widget FXParam75
@@ -6970,9 +6970,9 @@ Widget RecordArm76
     FB_Processor /RecordArm76
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR76
-    Control /TrackOutputMeterMaxPeakLR76
-    FB_Processor /TrackOutputMeterMaxPeakLR76
+Widget VUMeter76
+    Control /VUMeter76
+    FB_Processor /VUMeter76
 WidgetEnd
 
 Widget FXParam76
@@ -7061,9 +7061,9 @@ Widget RecordArm77
     FB_Processor /RecordArm77
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR77
-    Control /TrackOutputMeterMaxPeakLR77
-    FB_Processor /TrackOutputMeterMaxPeakLR77
+Widget VUMeter77
+    Control /VUMeter77
+    FB_Processor /VUMeter77
 WidgetEnd
 
 Widget FXParam77
@@ -7152,9 +7152,9 @@ Widget RecordArm78
     FB_Processor /RecordArm78
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR78
-    Control /TrackOutputMeterMaxPeakLR78
-    FB_Processor /TrackOutputMeterMaxPeakLR78
+Widget VUMeter78
+    Control /VUMeter78
+    FB_Processor /VUMeter78
 WidgetEnd
 
 Widget FXParam78
@@ -7243,9 +7243,9 @@ Widget RecordArm79
     FB_Processor /RecordArm79
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR79
-    Control /TrackOutputMeterMaxPeakLR79
-    FB_Processor /TrackOutputMeterMaxPeakLR79
+Widget VUMeter79
+    Control /VUMeter79
+    FB_Processor /VUMeter79
 WidgetEnd
 
 Widget FXParam79
@@ -7334,9 +7334,9 @@ Widget RecordArm80
     FB_Processor /RecordArm80
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR80
-    Control /TrackOutputMeterMaxPeakLR80
-    FB_Processor /TrackOutputMeterMaxPeakLR80
+Widget VUMeter80
+    Control /VUMeter80
+    FB_Processor /VUMeter80
 WidgetEnd
 
 Widget FXParam80
@@ -7425,9 +7425,9 @@ Widget RecordArm81
     FB_Processor /RecordArm81
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR81
-    Control /TrackOutputMeterMaxPeakLR81
-    FB_Processor /TrackOutputMeterMaxPeakLR81
+Widget VUMeter81
+    Control /VUMeter81
+    FB_Processor /VUMeter81
 WidgetEnd
 
 Widget FXParam81
@@ -7516,9 +7516,9 @@ Widget RecordArm82
     FB_Processor /RecordArm82
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR82
-    Control /TrackOutputMeterMaxPeakLR82
-    FB_Processor /TrackOutputMeterMaxPeakLR82
+Widget VUMeter82
+    Control /VUMeter82
+    FB_Processor /VUMeter82
 WidgetEnd
 
 Widget FXParam82
@@ -7607,9 +7607,9 @@ Widget RecordArm83
     FB_Processor /RecordArm83
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR83
-    Control /TrackOutputMeterMaxPeakLR83
-    FB_Processor /TrackOutputMeterMaxPeakLR83
+Widget VUMeter83
+    Control /VUMeter83
+    FB_Processor /VUMeter83
 WidgetEnd
 
 Widget FXParam83
@@ -7698,9 +7698,9 @@ Widget RecordArm84
     FB_Processor /RecordArm84
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR84
-    Control /TrackOutputMeterMaxPeakLR84
-    FB_Processor /TrackOutputMeterMaxPeakLR84
+Widget VUMeter84
+    Control /VUMeter84
+    FB_Processor /VUMeter84
 WidgetEnd
 
 Widget FXParam84
@@ -7789,9 +7789,9 @@ Widget RecordArm85
     FB_Processor /RecordArm85
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR85
-    Control /TrackOutputMeterMaxPeakLR85
-    FB_Processor /TrackOutputMeterMaxPeakLR85
+Widget VUMeter85
+    Control /VUMeter85
+    FB_Processor /VUMeter85
 WidgetEnd
 
 Widget FXParam85
@@ -7880,9 +7880,9 @@ Widget RecordArm86
     FB_Processor /RecordArm86
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR86
-    Control /TrackOutputMeterMaxPeakLR86
-    FB_Processor /TrackOutputMeterMaxPeakLR86
+Widget VUMeter86
+    Control /VUMeter86
+    FB_Processor /VUMeter86
 WidgetEnd
 
 Widget FXParam86
@@ -7971,9 +7971,9 @@ Widget RecordArm87
     FB_Processor /RecordArm87
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR87
-    Control /TrackOutputMeterMaxPeakLR87
-    FB_Processor /TrackOutputMeterMaxPeakLR87
+Widget VUMeter87
+    Control /VUMeter87
+    FB_Processor /VUMeter87
 WidgetEnd
 
 Widget FXParam87
@@ -8062,9 +8062,9 @@ Widget RecordArm88
     FB_Processor /RecordArm88
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR88
-    Control /TrackOutputMeterMaxPeakLR88
-    FB_Processor /TrackOutputMeterMaxPeakLR88
+Widget VUMeter88
+    Control /VUMeter88
+    FB_Processor /VUMeter88
 WidgetEnd
 
 Widget FXParam88
@@ -8153,9 +8153,9 @@ Widget RecordArm89
     FB_Processor /RecordArm89
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR89
-    Control /TrackOutputMeterMaxPeakLR89
-    FB_Processor /TrackOutputMeterMaxPeakLR89
+Widget VUMeter89
+    Control /VUMeter89
+    FB_Processor /VUMeter89
 WidgetEnd
 
 Widget FXParam89
@@ -8244,9 +8244,9 @@ Widget RecordArm90
     FB_Processor /RecordArm90
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR90
-    Control /TrackOutputMeterMaxPeakLR90
-    FB_Processor /TrackOutputMeterMaxPeakLR90
+Widget VUMeter90
+    Control /VUMeter90
+    FB_Processor /VUMeter90
 WidgetEnd
 
 Widget FXParam90
@@ -8335,9 +8335,9 @@ Widget RecordArm91
     FB_Processor /RecordArm91
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR91
-    Control /TrackOutputMeterMaxPeakLR91
-    FB_Processor /TrackOutputMeterMaxPeakLR91
+Widget VUMeter91
+    Control /VUMeter91
+    FB_Processor /VUMeter91
 WidgetEnd
 
 Widget FXParam91
@@ -8426,9 +8426,9 @@ Widget RecordArm92
     FB_Processor /RecordArm92
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR92
-    Control /TrackOutputMeterMaxPeakLR92
-    FB_Processor /TrackOutputMeterMaxPeakLR92
+Widget VUMeter92
+    Control /VUMeter92
+    FB_Processor /VUMeter92
 WidgetEnd
 
 Widget FXParam92
@@ -8517,9 +8517,9 @@ Widget RecordArm93
     FB_Processor /RecordArm93
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR93
-    Control /TrackOutputMeterMaxPeakLR93
-    FB_Processor /TrackOutputMeterMaxPeakLR93
+Widget VUMeter93
+    Control /VUMeter93
+    FB_Processor /VUMeter93
 WidgetEnd
 
 Widget FXParam93
@@ -8608,9 +8608,9 @@ Widget RecordArm94
     FB_Processor /RecordArm94
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR94
-    Control /TrackOutputMeterMaxPeakLR94
-    FB_Processor /TrackOutputMeterMaxPeakLR94
+Widget VUMeter94
+    Control /VUMeter94
+    FB_Processor /VUMeter94
 WidgetEnd
 
 Widget FXParam94
@@ -8699,9 +8699,9 @@ Widget RecordArm95
     FB_Processor /RecordArm95
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR95
-    Control /TrackOutputMeterMaxPeakLR95
-    FB_Processor /TrackOutputMeterMaxPeakLR95
+Widget VUMeter95
+    Control /VUMeter95
+    FB_Processor /VUMeter95
 WidgetEnd
 
 Widget FXParam95
@@ -8790,9 +8790,9 @@ Widget RecordArm96
     FB_Processor /RecordArm96
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR96
-    Control /TrackOutputMeterMaxPeakLR96
-    FB_Processor /TrackOutputMeterMaxPeakLR96
+Widget VUMeter96
+    Control /VUMeter96
+    FB_Processor /VUMeter96
 WidgetEnd
 
 Widget FXParam96
@@ -8881,9 +8881,9 @@ Widget RecordArm97
     FB_Processor /RecordArm97
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR97
-    Control /TrackOutputMeterMaxPeakLR97
-    FB_Processor /TrackOutputMeterMaxPeakLR97
+Widget VUMeter97
+    Control /VUMeter97
+    FB_Processor /VUMeter97
 WidgetEnd
 
 Widget FXParam97
@@ -8972,9 +8972,9 @@ Widget RecordArm98
     FB_Processor /RecordArm98
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR98
-    Control /TrackOutputMeterMaxPeakLR98
-    FB_Processor /TrackOutputMeterMaxPeakLR98
+Widget VUMeter98
+    Control /VUMeter98
+    FB_Processor /VUMeter98
 WidgetEnd
 
 Widget FXParam98
@@ -9063,9 +9063,9 @@ Widget RecordArm99
     FB_Processor /RecordArm99
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR99
-    Control /TrackOutputMeterMaxPeakLR99
-    FB_Processor /TrackOutputMeterMaxPeakLR99
+Widget VUMeter99
+    Control /VUMeter99
+    FB_Processor /VUMeter99
 WidgetEnd
 
 Widget FXParam99
@@ -9154,9 +9154,9 @@ Widget RecordArm100
     FB_Processor /RecordArm100
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR100
-    Control /TrackOutputMeterMaxPeakLR100
-    FB_Processor /TrackOutputMeterMaxPeakLR100
+Widget VUMeter100
+    Control /VUMeter100
+    FB_Processor /VUMeter100
 WidgetEnd
 
 Widget FXParam100
@@ -9245,9 +9245,9 @@ Widget RecordArm101
     FB_Processor /RecordArm101
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR101
-    Control /TrackOutputMeterMaxPeakLR101
-    FB_Processor /TrackOutputMeterMaxPeakLR101
+Widget VUMeter101
+    Control /VUMeter101
+    FB_Processor /VUMeter101
 WidgetEnd
 
 Widget FXParam101
@@ -9336,9 +9336,9 @@ Widget RecordArm102
     FB_Processor /RecordArm102
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR102
-    Control /TrackOutputMeterMaxPeakLR102
-    FB_Processor /TrackOutputMeterMaxPeakLR102
+Widget VUMeter102
+    Control /VUMeter102
+    FB_Processor /VUMeter102
 WidgetEnd
 
 Widget FXParam102
@@ -9427,9 +9427,9 @@ Widget RecordArm103
     FB_Processor /RecordArm103
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR103
-    Control /TrackOutputMeterMaxPeakLR103
-    FB_Processor /TrackOutputMeterMaxPeakLR103
+Widget VUMeter103
+    Control /VUMeter103
+    FB_Processor /VUMeter103
 WidgetEnd
 
 Widget FXParam103
@@ -9518,9 +9518,9 @@ Widget RecordArm104
     FB_Processor /RecordArm104
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR104
-    Control /TrackOutputMeterMaxPeakLR104
-    FB_Processor /TrackOutputMeterMaxPeakLR104
+Widget VUMeter104
+    Control /VUMeter104
+    FB_Processor /VUMeter104
 WidgetEnd
 
 Widget FXParam104
@@ -9609,9 +9609,9 @@ Widget RecordArm105
     FB_Processor /RecordArm105
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR105
-    Control /TrackOutputMeterMaxPeakLR105
-    FB_Processor /TrackOutputMeterMaxPeakLR105
+Widget VUMeter105
+    Control /VUMeter105
+    FB_Processor /VUMeter105
 WidgetEnd
 
 Widget FXParam105
@@ -9700,9 +9700,9 @@ Widget RecordArm106
     FB_Processor /RecordArm106
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR106
-    Control /TrackOutputMeterMaxPeakLR106
-    FB_Processor /TrackOutputMeterMaxPeakLR106
+Widget VUMeter106
+    Control /VUMeter106
+    FB_Processor /VUMeter106
 WidgetEnd
 
 Widget FXParam106
@@ -9791,9 +9791,9 @@ Widget RecordArm107
     FB_Processor /RecordArm107
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR107
-    Control /TrackOutputMeterMaxPeakLR107
-    FB_Processor /TrackOutputMeterMaxPeakLR107
+Widget VUMeter107
+    Control /VUMeter107
+    FB_Processor /VUMeter107
 WidgetEnd
 
 Widget FXParam107
@@ -9882,9 +9882,9 @@ Widget RecordArm108
     FB_Processor /RecordArm108
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR108
-    Control /TrackOutputMeterMaxPeakLR108
-    FB_Processor /TrackOutputMeterMaxPeakLR108
+Widget VUMeter108
+    Control /VUMeter108
+    FB_Processor /VUMeter108
 WidgetEnd
 
 Widget FXParam108
@@ -9973,9 +9973,9 @@ Widget RecordArm109
     FB_Processor /RecordArm109
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR109
-    Control /TrackOutputMeterMaxPeakLR109
-    FB_Processor /TrackOutputMeterMaxPeakLR109
+Widget VUMeter109
+    Control /VUMeter109
+    FB_Processor /VUMeter109
 WidgetEnd
 
 Widget FXParam109
@@ -10064,9 +10064,9 @@ Widget RecordArm110
     FB_Processor /RecordArm110
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR110
-    Control /TrackOutputMeterMaxPeakLR110
-    FB_Processor /TrackOutputMeterMaxPeakLR110
+Widget VUMeter110
+    Control /VUMeter110
+    FB_Processor /VUMeter110
 WidgetEnd
 
 Widget FXParam110
@@ -10155,9 +10155,9 @@ Widget RecordArm111
     FB_Processor /RecordArm111
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR111
-    Control /TrackOutputMeterMaxPeakLR111
-    FB_Processor /TrackOutputMeterMaxPeakLR111
+Widget VUMeter111
+    Control /VUMeter111
+    FB_Processor /VUMeter111
 WidgetEnd
 
 Widget FXParam111
@@ -10246,9 +10246,9 @@ Widget RecordArm112
     FB_Processor /RecordArm112
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR112
-    Control /TrackOutputMeterMaxPeakLR112
-    FB_Processor /TrackOutputMeterMaxPeakLR112
+Widget VUMeter112
+    Control /VUMeter112
+    FB_Processor /VUMeter112
 WidgetEnd
 
 Widget FXParam112
@@ -10337,9 +10337,9 @@ Widget RecordArm113
     FB_Processor /RecordArm113
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR113
-    Control /TrackOutputMeterMaxPeakLR113
-    FB_Processor /TrackOutputMeterMaxPeakLR113
+Widget VUMeter113
+    Control /VUMeter113
+    FB_Processor /VUMeter113
 WidgetEnd
 
 Widget FXParam113
@@ -10428,9 +10428,9 @@ Widget RecordArm114
     FB_Processor /RecordArm114
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR114
-    Control /TrackOutputMeterMaxPeakLR114
-    FB_Processor /TrackOutputMeterMaxPeakLR114
+Widget VUMeter114
+    Control /VUMeter114
+    FB_Processor /VUMeter114
 WidgetEnd
 
 Widget FXParam114
@@ -10519,9 +10519,9 @@ Widget RecordArm115
     FB_Processor /RecordArm115
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR115
-    Control /TrackOutputMeterMaxPeakLR115
-    FB_Processor /TrackOutputMeterMaxPeakLR115
+Widget VUMeter115
+    Control /VUMeter115
+    FB_Processor /VUMeter115
 WidgetEnd
 
 Widget FXParam115
@@ -10610,9 +10610,9 @@ Widget RecordArm116
     FB_Processor /RecordArm116
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR116
-    Control /TrackOutputMeterMaxPeakLR116
-    FB_Processor /TrackOutputMeterMaxPeakLR116
+Widget VUMeter116
+    Control /VUMeter116
+    FB_Processor /VUMeter116
 WidgetEnd
 
 Widget FXParam116
@@ -10701,9 +10701,9 @@ Widget RecordArm117
     FB_Processor /RecordArm117
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR117
-    Control /TrackOutputMeterMaxPeakLR117
-    FB_Processor /TrackOutputMeterMaxPeakLR117
+Widget VUMeter117
+    Control /VUMeter117
+    FB_Processor /VUMeter117
 WidgetEnd
 
 Widget FXParam117
@@ -10792,9 +10792,9 @@ Widget RecordArm118
     FB_Processor /RecordArm118
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR118
-    Control /TrackOutputMeterMaxPeakLR118
-    FB_Processor /TrackOutputMeterMaxPeakLR118
+Widget VUMeter118
+    Control /VUMeter118
+    FB_Processor /VUMeter118
 WidgetEnd
 
 Widget FXParam118
@@ -10883,9 +10883,9 @@ Widget RecordArm119
     FB_Processor /RecordArm119
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR119
-    Control /TrackOutputMeterMaxPeakLR119
-    FB_Processor /TrackOutputMeterMaxPeakLR119
+Widget VUMeter119
+    Control /VUMeter119
+    FB_Processor /VUMeter119
 WidgetEnd
 
 Widget FXParam119
@@ -10974,9 +10974,9 @@ Widget RecordArm120
     FB_Processor /RecordArm120
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR120
-    Control /TrackOutputMeterMaxPeakLR120
-    FB_Processor /TrackOutputMeterMaxPeakLR120
+Widget VUMeter120
+    Control /VUMeter120
+    FB_Processor /VUMeter120
 WidgetEnd
 
 Widget FXParam120
@@ -11065,9 +11065,9 @@ Widget RecordArm121
     FB_Processor /RecordArm121
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR121
-    Control /TrackOutputMeterMaxPeakLR121
-    FB_Processor /TrackOutputMeterMaxPeakLR121
+Widget VUMeter121
+    Control /VUMeter121
+    FB_Processor /VUMeter121
 WidgetEnd
 
 Widget FXParam121
@@ -11156,9 +11156,9 @@ Widget RecordArm122
     FB_Processor /RecordArm122
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR122
-    Control /TrackOutputMeterMaxPeakLR122
-    FB_Processor /TrackOutputMeterMaxPeakLR122
+Widget VUMeter122
+    Control /VUMeter122
+    FB_Processor /VUMeter122
 WidgetEnd
 
 Widget FXParam122
@@ -11247,9 +11247,9 @@ Widget RecordArm123
     FB_Processor /RecordArm123
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR123
-    Control /TrackOutputMeterMaxPeakLR123
-    FB_Processor /TrackOutputMeterMaxPeakLR123
+Widget VUMeter123
+    Control /VUMeter123
+    FB_Processor /VUMeter123
 WidgetEnd
 
 Widget FXParam123
@@ -11338,9 +11338,9 @@ Widget RecordArm124
     FB_Processor /RecordArm124
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR124
-    Control /TrackOutputMeterMaxPeakLR124
-    FB_Processor /TrackOutputMeterMaxPeakLR124
+Widget VUMeter124
+    Control /VUMeter124
+    FB_Processor /VUMeter124
 WidgetEnd
 
 Widget FXParam124
@@ -11429,9 +11429,9 @@ Widget RecordArm125
     FB_Processor /RecordArm125
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR125
-    Control /TrackOutputMeterMaxPeakLR125
-    FB_Processor /TrackOutputMeterMaxPeakLR125
+Widget VUMeter125
+    Control /VUMeter125
+    FB_Processor /VUMeter125
 WidgetEnd
 
 Widget FXParam125
@@ -11520,9 +11520,9 @@ Widget RecordArm126
     FB_Processor /RecordArm126
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR126
-    Control /TrackOutputMeterMaxPeakLR126
-    FB_Processor /TrackOutputMeterMaxPeakLR126
+Widget VUMeter126
+    Control /VUMeter126
+    FB_Processor /VUMeter126
 WidgetEnd
 
 Widget FXParam126
@@ -11611,9 +11611,9 @@ Widget RecordArm127
     FB_Processor /RecordArm127
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR127
-    Control /TrackOutputMeterMaxPeakLR127
-    FB_Processor /TrackOutputMeterMaxPeakLR127
+Widget VUMeter127
+    Control /VUMeter127
+    FB_Processor /VUMeter127
 WidgetEnd
 
 Widget FXParam127
@@ -11702,9 +11702,9 @@ Widget RecordArm128
     FB_Processor /RecordArm128
 WidgetEnd
 
-Widget TrackOutputMeterMaxPeakLR128
-    Control /TrackOutputMeterMaxPeakLR128
-    FB_Processor /TrackOutputMeterMaxPeakLR128
+Widget VUMeter128
+    Control /VUMeter128
+    FB_Processor /VUMeter128
 WidgetEnd
 
 Widget FXParam128
