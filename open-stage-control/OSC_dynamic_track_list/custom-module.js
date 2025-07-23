@@ -117,31 +117,42 @@ module.exports = {
 }
 
 function updateButtons(trackNumbers) {
-  const widgets = []
+  const widgets = [{
+    type: "panel",
+    id: "track_buttons",
+    target: "root",
+    css: "class:track-button-grid",
+    widgets: []
+  }]
 
   for (let i of trackNumbers.sort((a, b) => a - b)) {
-    widgets.push({
-      type: "button",
-      id: `btn_track_${i}`,
-      label: trackNames[i] || `Track ${i}`,
-      address: `/Select${i}`,
-      target: 'auto',
-      mode: "toggle",
-      value: trackSelectStates[i] || 0,
-      // color: trackColors[i] || undefined
-      colorWidget: trackColors[i] || undefined
-    })
-    widgets.push({
-      type: "led",
-      id: `led_track_${i}`,
-      address: `/VUMeter${i}`,
-      target: "auto",
-      width: 10,
-      height: 10,
-      parent: `btn_track_${i}`,
-      css: "position: absolute; top: 2px; left: 2px;"
+    widgets[0].widgets.push({
+      type: "panel",
+      id: `panel_track_${i}`,
+      target: "track_buttons",
+      css: "class:track-panel",
+      widgets: [
+        {
+          type: "button",
+          id: `btn_track_${i}`,
+          label: trackNames[i] || `Track ${i}`,
+          address: `/Select${i}`,
+          target: 'auto',
+          mode: "toggle",
+          value: trackSelectStates[i] || 0,
+          colorWidget: trackColors[i] || undefined,
+          css: "class:track-button"
+        },
+        {
+          type: "led",
+          id: `led_track_${i}`,
+          address: `/VUMeter${i}`,
+          target: "auto",
+          css: "class:track-led"
+        }
+      ]
     })
   }
 
-  receive("/EDIT", "track_buttons", { widgets })
+  receive("/EDIT", "track_buttons", JSON.stringify({ widgets: widgets[0].widgets }))
 }
