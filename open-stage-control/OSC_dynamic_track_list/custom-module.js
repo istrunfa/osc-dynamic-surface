@@ -154,5 +154,5 @@ function updateButtons(trackNumbers) {
     })
   }
 
-  receive("/EDIT", "track_buttons", JSON.stringify({ widgets: widgets[0].widgets }))
+  receive("/EDIT", "root", JSON.stringify({ widgets }))
 }
