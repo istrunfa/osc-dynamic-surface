@@ -1,0 +1,72 @@
+(INFO) Server started, app available at 
+    http://127.0.0.1:9000
+###########################################################
+### select a category init the values #####################
+###########################################################
+
+outfilter: colltype: #3 address /panel_3
+programm changeeeeeeeeeeeeeerrrrrrrrreeeeerrrrrrr 3
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 03 00 00 01 30 32 20 50 75 72 70 6c 65 20 4d 69 64 73 00 f7
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 03 00 00 02 4c 61 73 73 65 4c 61 6d 6d 65 72 74 00 f7
+infilter string req: f0 00 20 33 00 00 03 00 00 02 4c 61 73 73 65 4c 61 6d 6d 65 72 74 00 f7#midi#UCX1
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 03 00 00 10 44 72 69 66 74 77 6f 6f 64 20 50 75 72 70 6c 65 20 4e 69 67 68 74 6d 61 72 65 00 f7
+infilter string req: f0 00 20 33 00 00 03 00 00 10 44 72 69 66 74 77 6f 6f 64 20 50 75 72 70 6c 65 20 4e 69 67 68 74 6d 61 72 65 00 f7#midi#UCX1
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 01 00 0a 04 5e 18 f7
+infilterhelper   #f0,00,20,33,00,00,01,00,0a,04,5e,18,f7#/kempGainVol
+singleparameter   #/kempGainVol#12056
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 01 00 04 01 40 00 f7
+infilterhelper   #f0,00,20,33,00,00,01,00,04,01,40,00,f7#/kempRigVol
+singleparameter   #/kempRigVol#8192
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 03 00 32 00 00 f7
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 01 00 32 03 00 00 f7
+infilterhelper   #f0,00,20,33,00,00,01,00,32,03,00,00,f7#/kempStompA
+singleparameter   #/kempStompA#0
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 01 00 04 40 00 00 f7
+infilterhelper   #f0,00,20,33,00,00,01,00,04,40,00,00,f7#/kempStomps
+singleparameter   #/kempStomps#0
+infilter sysexxxxxxxxxxx f0 00 20 33 00 00 02 00 0b 00 00 01 00 01 00 01 40 00 34 4e 45 3b 40 00 3f 4c 00 00 f7
+multiparameter reccccccccccccccccc pres:3f4c treb: 4000mid: 453bbass: 344e
+infilter sysexxxxxxxxxxx f0 00 20 33 02 7f 3c 00 04 01 40 00 30 2e 30 64 42 00 f7
+infilterhelper   #f0,00,20,33,02,7f,3c,00,04,01,40,00,30,2e,30,64,42,00,f7#/kempRigVol
+string empfang @,,0,.,0,d,B,,÷ knobupdateid /kempRigVol
+infilter sysexxxxxxxxxxx f0 00 20 33 02 7f 3c 00 32 03 00 00 30 00 f7
+infilterhelper   #f0,00,20,33,02,7f,3c,00,32,03,00,00,30,00,f7#/kempStompA
+string empfang ,,0,,÷ knobupdateid /kempStompA
+
+
+#################################################################################################
+################### error deleting a blank line!  ############################
+
+(INFO) Custom module changed: C:\_openstage_projects\openstagecontrol4reaper_v3.js
+(INFO) Reloading custom module...
+(ERROR) Custom module loading error
+C:\_openstage_projects\openstagecontrol4reaper_v3.js:249
+			if (value.includes("f0 00
+			                   ^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:86:7)
+    at createScript (vm.js:268:10)
+    at Object.runInContext (vm.js:299:10)
+    at CustomModule.load (C:\Progs\open-stage-control-1.7.2-win32-x64\resources\app\server\open-stage-control-server.js:79845:16)
+    at CustomModule.reload (C:\Progs\open-stage-control-1.7.2-win32-x64\resources\app\server\open-stage-control-server.js:79900:18)
+    at FSWatcher. (C:\Progs\open-stage-control-1.7.2-win32-x64\resources\app\server\open-stage-control-server.js:79818:22)
+    at FSWatcher.emit (events.js:203:13)
+    at FSWatcher.emitWithAll (C:\Progs\open-stage-control-1.7.2-win32-x64\resources\app\server\open-stage-control-server.js:5200:8)
+    at FSWatcher._emit (C:\Progs\open-stage-control-1.7.2-win32-x64\resources\app\server\open-stage-control-server.js:5292:8)
+    at listener (C:\Progs\open-stage-control-1.7.2-win32-x64\resources\app\server\open-stage-control-server.js:6587:20)
+(ERROR) Failed to reload custom module
+
+##################################################################################################
+####################### deleting the comment on that line #############################
+### from: 			if (value.includes("f0 00 20 33 00 00 02 00 0b")) { // multiparameter in eq. address apge 11  ############
+### to:          	if (value.includes("f0 00 20 33 00 00 02 00 0b")) {
+####################################################################################################################
+###              results to ########################
+(INFO) Custom module changed: C:\_openstage_projects\openstagecontrol4reaper_v3.js
+(INFO) Reloading custom module...
+(INFO) Custom module reloaded successfully
+
+#######################################################################################
+############### copy the comment into it -> same as before -> also no error #############
+

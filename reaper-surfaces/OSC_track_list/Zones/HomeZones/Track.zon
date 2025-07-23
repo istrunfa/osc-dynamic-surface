@@ -1,0 +1,11 @@
+Zone Track
+        DisplayA|               TrackNameDisplay
+        DisplayB|               TrackPanDisplay
+        DisplayC|               TrackVolumeDisplay
+        DisplayD|               TrackNumberDisplay
+        Select|                 TrackUniqueSelect { Track }
+        Solo|                   TrackSolo
+        Mute|                   TrackMute
+        RecordArm|              TrackRecordArm
+        Meter|                  TrackOutputMeterMaxPeakLR
+ZoneEnd

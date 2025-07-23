@@ -1,0 +1,28 @@
+def generate_midi_scale_notes():
+    notes = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+    octaves = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+    scale_notes = []
+    for octave in octaves:
+        for note in notes:
+            if octave < 0:
+                formatted_note = f"{note}{octave}"
+            else:
+                formatted_note = f'{note}{octave}'
+            scale_notes.append(formatted_note)
+    return scale_notes[:128]  # Ensure only the first 128 notes are returned
+
+def generate_output():
+    scale_notes = generate_midi_scale_notes()
+    outputs = []
+    
+    for i, note in enumerate(scale_notes):
+        value = i / 127
+        output = f'"{note}" : "{value:.15f}",'  # Adjusted format as per requirement
+        outputs.append(output)
+    
+    return outputs
+
+# Generate and print the output
+outputs = generate_output()
+for output in outputs:
+    print(output)

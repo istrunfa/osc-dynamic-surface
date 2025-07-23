@@ -1,0 +1,12 @@
+:root {
+    --orange: #ed8514 ;
+    --olive: olive;
+    --blue: #354247;
+    
+    --dark: #333;
+    --light: #eee;
+    
+     --color-background: var(--dark);
+     
+    
+    }

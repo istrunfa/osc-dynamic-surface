@@ -1,0 +1,220 @@
+{
+  "createdWith": "Open Stage Control",
+  "version": "1.13.2",
+  "type": "session",
+  "content": {
+    "type": "root",
+    "id": "root",
+    "visible": true,
+    "interaction": true,
+    "comments": "",
+    "width": "auto",
+    "height": "auto",
+    "colorText": "auto",
+    "colorWidget": "auto",
+    "alphaFillOn": "auto",
+    "padding": "auto",
+    "html": "",
+    "css": "background: #422200",
+    "colorBg": "auto",
+    "layout": "default",
+    "justify": "start",
+    "gridTemplate": "",
+    "contain": true,
+    "scroll": true,
+    "innerPadding": true,
+    "verticalTabs": false,
+    "variables": "@{parent.variables}",
+    "traversing": false,
+    "value": "",
+    "default": "",
+    "linkId": "",
+    "address": "auto",
+    "preArgs": "",
+    "typeTags": "",
+    "decimals": 2,
+    "target": "",
+    "ignoreDefaults": false,
+    "bypass": false,
+    "script": "",
+    "widgets": [
+      {
+        "type": "fragment",
+        "top": 20,
+        "left": 30,
+        "id": "track0",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 1110,
+        "height": 130,
+        "expand": "false",
+        "css": "",
+        "file": "track.json",
+        "props": {
+          "variables": {
+            "n": 0
+          },
+          "range": {
+            "max": 1
+          }
+        },
+        "script": "",
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      },
+      {
+        "type": "fragment",
+        "top": 160,
+        "left": 30,
+        "id": "track1",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 1110,
+        "height": 130,
+        "expand": "false",
+        "css": "",
+        "file": "track.json",
+        "props": {
+          "variables": {
+            "n": 1
+          },
+          "range": {
+            "max": 1
+          }
+        },
+        "script": "",
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      },
+      {
+        "type": "fragment",
+        "top": 300,
+        "left": 30,
+        "id": "track2",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 1110,
+        "height": 130,
+        "expand": "false",
+        "css": "",
+        "file": "track.json",
+        "props": {
+          "variables": {
+            "n": 2
+          },
+          "range": {
+            "max": 1
+          }
+        },
+        "script": "",
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      },
+      {
+        "type": "fragment",
+        "top": 440,
+        "left": 30,
+        "id": "track3",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 1110,
+        "height": 130,
+        "expand": "false",
+        "css": "",
+        "file": "track.json",
+        "props": {
+          "variables": {
+            "n": 3
+          },
+          "range": {
+            "max": 1
+          }
+        },
+        "script": "",
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      },
+      {
+        "type": "fragment",
+        "top": 580,
+        "left": 30,
+        "id": "track4",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 1110,
+        "height": 130,
+        "expand": "false",
+        "css": "",
+        "file": "track.json",
+        "props": {
+          "variables": {
+            "n": 4
+          },
+          "range": {
+            "max": 1
+          }
+        },
+        "script": "",
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      },
+      {
+        "type": "fragment",
+        "top": 720,
+        "left": 30,
+        "id": "track5",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 1110,
+        "height": 130,
+        "expand": "false",
+        "css": "",
+        "file": "track.json",
+        "props": {
+          "variables": {
+            "n": 5
+          },
+          "range": {
+            "max": 1
+          }
+        },
+        "script": "",
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      },
+      {
+        "type": "fragment",
+        "top": 860,
+        "left": 30,
+        "id": "track6",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 1110,
+        "height": 130,
+        "expand": "false",
+        "css": "",
+        "file": "track.json",
+        "props": {
+          "variables": {
+            "n": 6
+          },
+          "range": {
+            "max": 1
+          }
+        },
+        "script": "",
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      }
+    ],
+    "tabs": [],
+    "hideMenu": false
+  }
+}

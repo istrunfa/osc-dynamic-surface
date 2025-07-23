@@ -1,0 +1,38 @@
+<VSTPluginProperties>
+
+
+<VSTParametersStructure>
+<!-- Global: -->
+<Param id="0" name="main: Output" />
+<Param id="1" name="main: Active #FX1" />
+<Param id="2" name="main: Active #FX2" />
+<Param id="3" name="PCore: LED Colour" />
+<Param id="4" name="VCC: Voices" />
+<Param id="5" name="VCC: Voice Stack" />
+<Param id="6" name="VCC: Mode" />
+<Param id="7" name="VCC: GlideMode" />
+<Param id="8" name="VCC: Glide" />
+<Param id="9" name="VCC: Glide2" />
+<Param id="10" name="VCC: GlideRange" />
+<Param id="11" name="VCC: PitchBend Up" />
+<Param id="12" name="VCC: PitchBend Down" />
+<Param id="13" name="VCC: TuningMode" />
+<Param id="14" name="VCC: Transpose" />
+<Param id="15" name="VCC: FineTuneCents" />
+<Param id="16" name="VCC: Note Priority" />
+<Param id="17" name="VCC: MultiCore" />
+<Param id="18" name="OPT: Accuracy" />
+<Param id="19" name="OPT: OfflineAcc" />
+<Param id="20" name="OPT: TuneSlop" />
+<Param id="21" name="OPT: CutoffSlop" />
+<Param id="22" name="OPT: GlideSlop" />
+<Param id="23" name="OPT: PWSlop" />
+<Param id="24" name="OPT: EnvrateSlop" />
+<Param id="25" name="OPT: V1Mod" />
+<Param id="26" name="OPT: V2Mod" />
+<Param id="27" name="OPT: V3Mod" />
+<Param id="28" name="OPT: V4Mod" />
+<Param id="29" name="OPT: V5Mod" />
+<Param id="30" name="OPT: V6Mod" />
+<Param id="31" name="OPT: V7Mod" />
+<Param id="32" name="OPT: V8Mod" />

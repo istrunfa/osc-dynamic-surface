@@ -1,0 +1,71 @@
+{
+  "type": "root",
+  "id": "root",
+  "linkId": "",
+  "color": "auto",
+  "css": "",
+  "default": "",
+  "value": "",
+  "precision": 2,
+  "address": "/root",
+  "preArgs": "",
+  "target": "",
+  "bypass": false,
+  "traversing": false,
+  "variables": {},
+  "tabs": [
+    {
+      "type": "tab",
+      "id": "tab_1",
+      "linkId": "",
+      "label": "auto",
+      "color": "auto",
+      "css": "",
+      "detached": true,
+      "default": "",
+      "value": "",
+      "precision": 2,
+      "address": "/tab_1",
+      "preArgs": "",
+      "target": "",
+      "bypass": false,
+      "variables": "@{parent.variables}",
+      "widgets": [
+        {
+          "type": "switch",
+          "top": 80,
+          "left": 290,
+          "id": "switch_1",
+          "linkId": "",
+          "width": 290,
+          "height": 210,
+          "label": "auto",
+          "color": "auto",
+          "css": ".switch {\n  display:grid;\n  /* replace \"3\" with the number of columns */\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 1rem;\n}\n.value {\n  margin:0;\n  border:0;\n}",
+          "horizontal": false,
+          "showValues": false,
+          "values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "traversing": true,
+          "default": "",
+          "value": "",
+          "precision": 2,
+          "address": "/switch_1",
+          "preArgs": "",
+          "target": "",
+          "bypass": false
+        }
+      ],
+      "tabs": [],
+      "scroll": true
+    }
+  ],
+  "scroll": true,
+  "label": false
+}

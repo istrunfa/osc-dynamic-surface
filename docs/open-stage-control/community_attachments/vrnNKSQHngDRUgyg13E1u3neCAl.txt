@@ -1,0 +1,148 @@
+# ouverture du fichier debut panel
+
+g = open('deb_panel.json', 'r')
+data_deb_panel = g.read()
+g.close
+
+# ouverture du fichier debut fader
+
+h = open('deb_fader.json', 'r')
+data_deb_fader = h.read()
+h.close
+
+# ouverture du fichier  fader_1
+
+i = open('mid_1_fader.json', 'r')
+data_mid_1_fader = i.read()
+i.close
+
+# ouverture du fichier  fader_2
+
+k = open('mid_2_fader.json', 'r')
+data_mid_2_fader = k.read()
+k.close
+
+# ouverture du fichier fin panel
+
+j = open('fin_panel.json', 'r')
+data_fin_panel = j.read()
+j.close
+
+# ouverture du fichier texte titre
+
+l = open('deb_text_titr.json', 'r')
+data_deb_text_titr = l.read()
+l.close
+
+# ouverture du fichier texte titre
+
+m = open('fin_text_titr.json', 'r')
+data_fin_text_titr = m.read()
+m.close
+
+# ouverture du fichier texte titre
+
+n = open('deb_text_val.json', 'r')
+data_deb_text_val = n.read()
+n.close
+
+# ouverture du fichier texte titre
+
+o = open('fin_text_val.json', 'r')
+data_fin_text_val = o.read()
+o.close
+
+# ouverture du fichier vstxml
+
+f = open('test.txt', 'r')
+data = f.read()
+f.close
+
+
+
+
+# traitement des nom des faders et ecriture du fichier
+
+z = open('output.json','a')
+top = 10
+left= 10
+larg = 1800
+haut = 1200
+
+print (data_deb_panel,file=z)
+
+lines = data.splitlines()
+for idx,line in enumerate(lines):
+    name = line[20:40]
+    name = name.replace("/","")
+    name = name.replace('"',"")
+    name = name.replace(">","")
+    name = name.replace("ure"," ")
+    id= '            "id": "'
+    print ("         {",file=z)
+    print ("            \"type\": \"fader\",",file=z)
+    print ("            \"top\": ",top,",",file=z)
+    print ("            \"left\": ",left,",",file=z)
+    print (id,name,"\"",",",file=z)
+    print (data_mid_1_fader,file=z)
+    print ("            \"linkId\": \">>\"",",",file=z)
+    print (data_mid_2_fader,file=z)
+    left= left + 60
+    if left >= larg  :
+        top = top + 210
+        left = 10
+
+top_titr = 10
+left_titr= 10
+
+lines2 = data.splitlines()
+for idx2,line2 in enumerate(lines2):
+    name2 = line2[20:40]
+    name2 = name2.replace("/","")
+    name2 = name2.replace('"',"")
+    name2 = name2.replace(">","")
+    name2 = name2.replace("ure"," ")
+    print ("         {",file=z)
+    print ("            \"type\": \"text\",",file=z)
+    print ("            \"top\": ",top_titr,",",file=z)
+    print ("            \"left\": ",left_titr,",",file=z)
+    print (id,name2,"\"",",",file=z)
+    print (data_deb_text_titr,file=z)
+    print ("            \"value\": ","\"",name2,"\"",",",file=z)
+    print (data_fin_text_titr,file=z)
+    left_titr= left_titr + 60
+    if left_titr >= larg  :
+        top_titr = top_titr + 210
+        left_titr = 10
+
+top_val = 10
+left_val= 10
+sn ="_val"
+lines3 = data.splitlines()
+for idx3,line3 in enumerate(lines2):
+    name3 = line3[20:40]
+    name3 = name3.replace("/","")
+    name3 = name3.replace('"',"")
+    name3 = name3.replace(">","")
+    name3 = name3.replace("ure"," ")
+    print ("         {",file=z)
+    print ("            \"type\": \"text\",",file=z)
+    print ("            \"top\": ",top_val,",",file=z)
+    print ("            \"left\": ",left_val,",",file=z)
+    print (id,name3 + sn,"\"",",",file=z)
+    print (data_deb_text_val,file=z)
+    print ("            \"value\": ","\"",name3,"\"",",",file=z)
+    print (data_fin_text_val,file=z)
+    left_val= left_val + 60
+    if left_val >= larg  :
+        top_val = top_val + 210
+        left_val = 10
+
+
+print (data_fin_panel,file=z)
+
+z.close()
+
+
+
+

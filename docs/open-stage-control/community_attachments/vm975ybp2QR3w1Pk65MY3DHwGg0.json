@@ -1,0 +1,90 @@
+{
+  "createdWith": "Open Stage Control",
+  "version": "1.27.1",
+  "type": "session",
+  "content": {
+    "type": "root",
+    "id": "root",
+    "width": 600,
+    "height": 400,
+    "widgets": [
+      {
+        "type": "script",
+        "id": "ledState",
+        "value": 0
+      },
+      {
+        "type": "button",
+        "id": "Button1",
+        "top": 50,
+        "left": 50,
+        "width": 120,
+        "height": 50,
+        "label": "Button 1",
+        "mode": "push",
+        "on": "set('ledState', 1)",
+        "off": 0
+      },
+      {
+        "type": "button",
+        "id": "Button2",
+        "top": 120,
+        "left": 50,
+        "width": 120,
+        "height": 50,
+        "label": "Button 2",
+        "mode": "push",
+        "on": "set('ledState', 2)",
+        "off": 0
+      },
+      {
+        "type": "button",
+        "id": "Button3",
+        "top": 190,
+        "left": 50,
+        "width": 120,
+        "height": 50,
+        "label": "Button 3",
+        "mode": "push",
+        "on": "set('ledState', 3)",
+        "off": 0
+      },
+      {
+        "type": "led",
+        "id": "LED1",
+        "top": 50,
+        "left": 220,
+        "width": 50,
+        "height": 50,
+        "mode": "intensity",
+        "range": { "min": 0, "max": 1 },
+        "value": "`ledState` === 1",
+        "colorFill": "green"
+      },
+      {
+        "type": "led",
+        "id": "LED2",
+        "top": 120,
+        "left": 220,
+        "width": 50,
+        "height": 50,
+        "mode": "intensity",
+        "range": { "min": 0, "max": 1 },
+        "value": "`ledState` === 2",
+        "colorFill": "green"
+      },
+      {
+        "type": "led",
+        "id": "LED3",
+        "top": 190,
+        "left": 220,
+        "width": 50,
+        "height": 50,
+        "mode": "intensity",
+        "range": { "min": 0, "max": 1 },
+        "value": "`ledState` === 3",
+        "colorFill": "green"
+      }
+    ]
+  }
+}

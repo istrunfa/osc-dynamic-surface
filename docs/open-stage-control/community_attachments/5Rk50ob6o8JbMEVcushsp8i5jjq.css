@@ -1,0 +1,26 @@
+.Fader2 {
+    background-image: url('../Theme/BlackMagicFader/StripEmptyShortened.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    --knob-height: calc(0.186 * var(--height));
+    --strip-padding: calc(var(--height) * 0.149);
+    --fader-height: calc(var(--height) - var(--strip-padding) * 2);
+}
+.Fader2 canvas {
+}
+.Fader2 .fader_knob {
+    position:absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: calc(1rem * (var(--strip-padding) - var(--knob-height) / 2));
+    background-image: url('../Theme/BlackMagicFader/Potentiometer.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto calc(1rem * var(--knob-height));
+    pointer-events: none;
+    transform: translateY(calc(
+        -1rem * var(--value) * var(--fader-height)
+    ));
+}

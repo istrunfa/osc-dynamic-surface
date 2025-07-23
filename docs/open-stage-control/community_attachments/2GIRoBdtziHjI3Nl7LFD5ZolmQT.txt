@@ -1,0 +1,289 @@
+<VSTPluginProperties>
+
+<!--  name="Diva 1.4.0" id="DiVa" -->
+<VSTParametersStructure>
+<!-- Global: -->
+<Param id="0" name="main: Output" />
+<Param id="1" name="main: Active #FX1" />
+<Param id="2" name="main: Active #FX2" />
+<Param id="3" name="PCore: LED Colour" />
+<Param id="4" name="VCC: Voices" />
+<Param id="5" name="VCC: Voice Stack" />
+<Param id="6" name="VCC: Mode" />
+<Param id="7" name="VCC: GlideMode" />
+<Param id="8" name="VCC: Glide" />
+<Param id="9" name="VCC: Glide2" />
+<Param id="10" name="VCC: GlideRange" />
+<Param id="11" name="VCC: PitchBend Up" />
+<Param id="12" name="VCC: PitchBend Down" />
+<Param id="13" name="VCC: TuningMode" />
+<Param id="14" name="VCC: Transpose" />
+<Param id="15" name="VCC: FineTuneCents" />
+<Param id="16" name="VCC: Note Priority" />
+<Param id="17" name="VCC: MultiCore" />
+<Param id="18" name="OPT: Accuracy" />
+<Param id="19" name="OPT: OfflineAcc" />
+<Param id="20" name="OPT: TuneSlop" />
+<Param id="21" name="OPT: CutoffSlop" />
+<Param id="22" name="OPT: GlideSlop" />
+<Param id="23" name="OPT: PWSlop" />
+<Param id="24" name="OPT: EnvrateSlop" />
+<Param id="25" name="OPT: V1Mod" />
+<Param id="26" name="OPT: V2Mod" />
+<Param id="27" name="OPT: V3Mod" />
+<Param id="28" name="OPT: V4Mod" />
+<Param id="29" name="OPT: V5Mod" />
+<Param id="30" name="OPT: V6Mod" />
+<Param id="31" name="OPT: V7Mod" />
+<Param id="32" name="OPT: V8Mod" />
+<Param id="33" name="ENV1: Attack" />
+<Param id="34" name="ENV1: Decay" />
+<Param id="35" name="ENV1: Sustain" />
+<Param id="36" name="ENV1: Release" />
+<Param id="37" name="ENV1: Velocity" />
+<Param id="38" name="ENV1: Model" />
+<Param id="39" name="ENV1: Trigger" />
+<Param id="40" name="ENV1: Quantise" />
+<Param id="41" name="ENV1: Curve" />
+<Param id="42" name="ENV1: Release On" />
+<Param id="43" name="ENV1: KeyFollow" />
+<Param id="44" name="ENV2: Attack" />
+<Param id="45" name="ENV2: Decay" />
+<Param id="46" name="ENV2: Sustain" />
+<Param id="47" name="ENV2: Release" />
+<Param id="48" name="ENV2: Velocity" />
+<Param id="49" name="ENV2: Model" />
+<Param id="50" name="ENV2: Trigger" />
+<Param id="51" name="ENV2: Quantise" />
+<Param id="52" name="ENV2: Curve" />
+<Param id="53" name="ENV2: Release On" />
+<Param id="54" name="ENV2: KeyFollow" />
+<Param id="55" name="LFO1: Sync" />
+<Param id="56" name="LFO1: Restart" />
+<Param id="57" name="LFO1: Waveform" />
+<Param id="58" name="LFO1: Phase" />
+<Param id="59" name="LFO1: Delay" />
+<Param id="60" name="LFO1: DepthMod Src1" />
+<Param id="61" name="LFO1: DepthMod Dpt1" />
+<Param id="62" name="LFO1: Rate" />
+<Param id="63" name="LFO1: FreqMod Src1" />
+<Param id="64" name="LFO1: FreqMod Dpt" />
+<Param id="65" name="LFO2: Sync" />
+<Param id="66" name="LFO2: Restart" />
+<Param id="67" name="LFO2: Waveform" />
+<Param id="68" name="LFO2: Phase" />
+<Param id="69" name="LFO2: Delay" />
+<Param id="70" name="LFO2: DepthMod Src1" />
+<Param id="71" name="LFO2: DepthMod Dpt1" />
+<Param id="72" name="LFO2: Rate" />
+<Param id="73" name="LFO2: FreqMod Src1" />
+<Param id="74" name="LFO2: FreqMod Dpt" />
+<Param id="75" name="MOD: Quantise" />
+<Param id="76" name="MOD: Slew Rate" />
+<Param id="77" name="MOD: RectifySource" />
+<Param id="78" name="MOD: InvertSource" />
+<Param id="79" name="MOD: QuantiseSource" />
+<Param id="80" name="MOD: LagSource" />
+<Param id="81" name="MOD: AddSource1" />
+<Param id="82" name="MOD: AddSource2" />
+<Param id="83" name="MOD: MulSource1" />
+<Param id="84" name="MOD: MulSource2" />
+<Param id="85" name="OSC: Model" />
+<Param id="86" name="OSC: Tune1" />
+<Param id="87" name="OSC: Tune2" />
+<Param id="88" name="OSC: Tune3" />
+<Param id="89" name="OSC: Vibrato" />
+<Param id="90" name="OSC: PulseWidth" />
+<Param id="91" name="OSC: Shape1" />
+<Param id="92" name="OSC: Shape2" />
+<Param id="93" name="OSC: Shape3" />
+<Param id="94" name="OSC: FM" />
+<Param id="95" name="OSC: Sync2" />
+<Param id="96" name="OSC: OscMix" />
+<Param id="97" name="OSC: Volume1" />
+<Param id="98" name="OSC: Volume2" />
+<Param id="99" name="OSC: Volume3" />
+<Param id="100" name="OSC: PulseShape" />
+<Param id="101" name="OSC: SawShape" />
+<Param id="102" name="OSC: SuboscShape" />
+<Param id="103" name="OSC: Tune1ModSrc" />
+<Param id="104" name="OSC: Tune1ModDepth" />
+<Param id="105" name="OSC: Tune2ModSrc" />
+<Param id="106" name="OSC: Tune2ModDepth" />
+<Param id="107" name="OSC: PWModSrc" />
+<Param id="108" name="OSC: PWModDepth" />
+<Param id="109" name="OSC: ShapeSrc" />
+<Param id="110" name="OSC: ShapeDepth" />
+<Param id="111" name="OSC: Triangle1On" />
+<Param id="112" name="OSC: Sine2On" />
+<Param id="113" name="OSC: Saw1On" />
+<Param id="114" name="OSC: Pwm1On" />
+<Param id="115" name="OSC: Triangle2On" />
+<Param id="116" name="OSC: Saw2On" />
+<Param id="117" name="OSC: Pulse2On" />
+<Param id="118" name="OSC: PWM2On" />
+<Param id="119" name="OSC: Noise1On" />
+<Param id="120" name="OSC: ShapeModel" />
+<Param id="121" name="OSC: Sync3" />
+<Param id="122" name="OSC: NoiseVol" />
+<Param id="123" name="OSC: NoiseColor" />
+<Param id="124" name="OSC: TuneModOsc1" />
+<Param id="125" name="OSC: TuneModOsc2" />
+<Param id="126" name="OSC: TuneModOsc3" />
+<Param id="127" name="OSC: ShapeModOsc1" />
+<Param id="128" name="OSC: ShapeModOsc2" />
+<Param id="129" name="OSC: ShapeModOsc3" />
+<Param id="130" name="OSC: TuneModMode" />
+<Param id="131" name="OSC: EcoWave1" />
+<Param id="132" name="OSC: EcoWave2" />
+<Param id="133" name="OSC: RingmodPulse" />
+<Param id="134" name="OSC: Drift" />
+<Param id="135" name="OSC: FmModSrc" />
+<Param id="136" name="OSC: FmModDepth" />
+<Param id="137" name="OSC: NoiseVolModSrc" />
+<Param id="138" name="OSC: NoiseVolModDepth" />
+<Param id="139" name="HPF: Model" />
+<Param id="140" name="HPF: Frequency" />
+<Param id="141" name="HPF: Resonance" />
+<Param id="142" name="HPF: Revision" />
+<Param id="143" name="HPF: KeyFollow" />
+<Param id="144" name="HPF: FreqModSrc" />
+<Param id="145" name="HPF: FreqModDepth" />
+<Param id="146" name="HPF: Post-HPF Freq" />
+<Param id="147" name="VCF1: Model" />
+<Param id="148" name="VCF1: Frequency" />
+<Param id="149" name="VCF1: Resonance" />
+<Param id="150" name="VCF1: FreqModSrc" />
+<Param id="151" name="VCF1: FreqModDepth" />
+<Param id="152" name="VCF1: FreqMod2Src" />
+<Param id="153" name="VCF1: FreqMod2Depth" />
+<Param id="154" name="VCF1: KeyFollow" />
+<Param id="155" name="VCF1: FilterFM" />
+<Param id="156" name="VCF1: LadderMode" />
+<Param id="157" name="VCF1: LadderColor" />
+<Param id="158" name="VCF1: SlnKyRevision" />
+<Param id="159" name="VCF1: SvfMode" />
+<Param id="160" name="VCF1: Feedback" />
+<Param id="161" name="VCF1: ResModSrc" />
+<Param id="162" name="VCF1: ResModDepth" />
+<Param id="163" name="VCF1: FmAmountModSrc" />
+<Param id="164" name="VCF1: FmAmountModDepth" />
+<Param id="165" name="VCF1: FeedbackModSrc" />
+<Param id="166" name="VCF1: FeedbackModDepth" />
+<Param id="167" name="VCA1: Pan" />
+<Param id="168" name="VCA1: Volume" />
+<Param id="169" name="VCA1: VCA" />
+<Param id="170" name="VCA1: Modulation" />
+<Param id="171" name="VCA1: ModDepth" />
+<Param id="172" name="VCA1: PanModulation" />
+<Param id="173" name="VCA1: PanModDepth" />
+<Param id="174" name="VCA1: Mode" />
+<Param id="175" name="VCA1: Offset" />
+<Param id="176" name="Scope1: Frequency" />
+<Param id="177" name="Scope1: Scale" />
+<Param id="178" name="FX1: Module" />
+<Param id="179" name="Chrs1: Type" />
+<Param id="180" name="Chrs1: Rate" />
+<Param id="181" name="Chrs1: Depth" />
+<Param id="182" name="Chrs1: Wet" />
+<Param id="183" name="Phase1: Type" />
+<Param id="184" name="Phase1: Rate" />
+<Param id="185" name="Phase1: Feedback" />
+<Param id="186" name="Phase1: Stereo" />
+<Param id="187" name="Phase1: Sync" />
+<Param id="188" name="Phase1: Phase" />
+<Param id="189" name="Phase1: Wet" />
+<Param id="190" name="Plate1: PreDelay" />
+<Param id="191" name="Plate1: Diffusion" />
+<Param id="192" name="Plate1: Damp" />
+<Param id="193" name="Plate1: Decay" />
+<Param id="194" name="Plate1: Size" />
+<Param id="195" name="Plate1: Dry" />
+<Param id="196" name="Plate1: Wet" />
+<Param id="197" name="Delay1: Left Delay" />
+<Param id="198" name="Delay1: Center Delay" />
+<Param id="199" name="Delay1: Right Delay" />
+<Param id="200" name="Delay1: Side Vol" />
+<Param id="201" name="Delay1: Center Vol" />
+<Param id="202" name="Delay1: Feedback" />
+<Param id="203" name="Delay1: HP" />
+<Param id="204" name="Delay1: LP" />
+<Param id="205" name="Delay1: Dry" />
+<Param id="206" name="Delay1: Wow" />
+<Param id="207" name="Rtary1: Mode" />
+<Param id="208" name="Rtary1: Mix" />
+<Param id="209" name="Rtary1: Balance" />
+<Param id="210" name="Rtary1: Drive" />
+<Param id="211" name="Rtary1: Stereo" />
+<Param id="212" name="Rtary1: Out" />
+<Param id="213" name="Rtary1: Slow" />
+<Param id="214" name="Rtary1: Fast" />
+<Param id="215" name="Rtary1: RiseTime" />
+<Param id="216" name="Rtary1: Controller" />
+<Param id="217" name="FX2: Module" />
+<Param id="218" name="Chrs2: Type" />
+<Param id="219" name="Chrs2: Rate" />
+<Param id="220" name="Chrs2: Depth" />
+<Param id="221" name="Chrs2: Wet" />
+<Param id="222" name="Phase2: Type" />
+<Param id="223" name="Phase2: Rate" />
+<Param id="224" name="Phase2: Feedback" />
+<Param id="225" name="Phase2: Stereo" />
+<Param id="226" name="Phase2: Sync" />
+<Param id="227" name="Phase2: Phase" />
+<Param id="228" name="Phase2: Wet" />
+<Param id="229" name="Plate2: PreDelay" />
+<Param id="230" name="Plate2: Diffusion" />
+<Param id="231" name="Plate2: Damp" />
+<Param id="232" name="Plate2: Decay" />
+<Param id="233" name="Plate2: Size" />
+<Param id="234" name="Plate2: Dry" />
+<Param id="235" name="Plate2: Wet" />
+<Param id="236" name="Delay2: Left Delay" />
+<Param id="237" name="Delay2: Center Delay" />
+<Param id="238" name="Delay2: Right Delay" />
+<Param id="239" name="Delay2: Side Vol" />
+<Param id="240" name="Delay2: Center Vol" />
+<Param id="241" name="Delay2: Feedback" />
+<Param id="242" name="Delay2: HP" />
+<Param id="243" name="Delay2: LP" />
+<Param id="244" name="Delay2: Dry" />
+<Param id="245" name="Delay2: Wow" />
+<Param id="246" name="Rtary2: Mode" />
+<Param id="247" name="Rtary2: Mix" />
+<Param id="248" name="Rtary2: Balance" />
+<Param id="249" name="Rtary2: Drive" />
+<Param id="250" name="Rtary2: Stereo" />
+<Param id="251" name="Rtary2: Out" />
+<Param id="252" name="Rtary2: Slow" />
+<Param id="253" name="Rtary2: Fast" />
+<Param id="254" name="Rtary2: RiseTime" />
+<Param id="255" name="Rtary2: Controller" />
+<Param id="256" name="CLK: Multiply" />
+<Param id="257" name="CLK: TimeBase" />
+<Param id="258" name="CLK: Swing" />
+<Param id="259" name="ARP: Direction" />
+<Param id="260" name="ARP: Octaves" />
+<Param id="261" name="ARP: Multiply" />
+<Param id="262" name="ARP: Restart" />
+<Param id="263" name="ARP: OnOff" />
+<Param id="264" name="OSC: DigitalShape2" />
+<Param id="265" name="OSC: DigitalShape3" />
+<Param id="266" name="OSC: DigitalShape4" />
+<Param id="267" name="VCF1: ShapeMix" />
+<Param id="268" name="VCF1: ShapeModSrc" />
+<Param id="269" name="VCF1: ShapeModDepth" />
+<Param id="270" name="VCF1: UhbieBandpass" />
+<Param id="271" name="ARP: Order" />
+<Param id="272" name="LFO1: Polarity" />
+<Param id="273" name="LFO2: Polarity" />
+<Param id="274" name="Phase1: Depth" />
+<Param id="275" name="Phase1: Center" />
+<Param id="276" name="Phase2: Depth" />
+<Param id="277" name="Phase2: Center" />
+<Param id="278" name="OSC: DigitalType1" />
+<Param id="279" name="OSC: DigitalType2" />
+<Param id="280" name="OSC: DigitalAntiAlias" />
+</VSTParametersStructure>
+
+</VSTPluginProperties>

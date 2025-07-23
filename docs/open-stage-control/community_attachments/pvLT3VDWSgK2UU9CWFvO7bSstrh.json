@@ -1,0 +1,1 @@
+{"debug":true,"send":["127.0.0.1:8000"],"port":9000,"load":"C:\\_openstage_projects\\OpenStageControl4reaper_2.json","custom-module":"C:\\_openstage_projects\\openstagecontrol4reaper.js","midi":["loopMIDI:2,3","sysex"]}

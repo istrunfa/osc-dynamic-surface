@@ -1,0 +1,38 @@
+
+
+
+
+
+0   main: Output   
+1   main: Active #FX1   
+2   main: Active #FX2   
+3   PCore: LED Colour   
+4   VCC: Voices   
+5   VCC: Voice Stack   
+6   VCC: Mode   
+7   VCC: GlideMode   
+8   VCC: Glide   
+9   VCC: Glide2   
+10   VCC: GlideRange   
+11   VCC: PitchBend Up   
+12   VCC: PitchBend Down   
+13   VCC: TuningMode   
+14   VCC: Transpose   
+15   VCC: FineTuneCents   
+16   VCC: Note Priority   
+17   VCC: MultiCore   
+18   OPT: Accuracy   
+19   OPT: OfflineAcc   
+20   OPT: TuneSlop   
+21   OPT: CutoffSlop   
+22   OPT: GlideSlop   
+23   OPT: PWSlop   
+24   OPT: EnvrateSlop   
+25   OPT: V1Mod   
+26   OPT: V2Mod   
+27   OPT: V3Mod   
+28   OPT: V4Mod   
+29   OPT: V5Mod   
+30   OPT: V6Mod   
+31   OPT: V7Mod   
+32   OPT: V8Mod   

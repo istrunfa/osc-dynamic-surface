@@ -1,0 +1,119 @@
+<VSTPluginProperties>
+
+<!--  name="Dune" id="SWSP" -->
+<VSTParametersStructure>
+<!-- Global: -->
+<Param id="0" name="Osc 1 Shape" />
+<Param id="1" name="Osc 1 Coarse" />
+<Param id="2" name="Osc 1 Fine" />
+<Param id="3" name="Osc 1 Fat" />
+<Param id="4" name="Osc 1 Wave" />
+<Param id="5" name="Osc 2 Shape" />
+<Param id="6" name="Osc 2 Coarse" />
+<Param id="7" name="Osc 2 Fine" />
+<Param id="8" name="Osc 2 Fat" />
+<Param id="9" name="Osc 2 Wave" />
+<Param id="10" name="Osc 3 Shape" />
+<Param id="11" name="Osc 3 Level" />
+<Param id="12" name="Osc Mix" />
+<Param id="13" name="Noise Colour" />
+<Param id="14" name="Noise Level" />
+<Param id="15" name="Osc Common RM" />
+<Param id="16" name="Osc Common PW" />
+<Param id="17" name="Osc FM" />
+<Param id="18" name="Amp Attack" />
+<Param id="19" name="Amp Decay" />
+<Param id="20" name="Amp Sustain" />
+<Param id="21" name="Amp Release" />
+<Param id="22" name="Filter Attack" />
+<Param id="23" name="Filter Decay" />
+<Param id="24" name="Filter Sustain" />
+<Param id="25" name="Filter Release" />
+<Param id="26" name="Filter Keytrack" />
+<Param id="27" name="Filter Reserved" />
+<Param id="28" name="Filter Cutoff" />
+<Param id="29" name="Filter Resonance" />
+<Param id="30" name="Filter Env Amt" />
+<Param id="31" name="Filter Offset" />
+<Param id="32" name="Osc Sync" />
+<Param id="33" name="LFO 1 Shape" />
+<Param id="34" name="LFO 1 Rate" />
+<Param id="35" name="LFO 1 Skew" />
+<Param id="36" name="LFO 1 Fade In" />
+<Param id="37" name="LFO 1 Sync" />
+<Param id="38" name="LFO 1 Reset" />
+<Param id="39" name="Reserved" />
+<Param id="40" name="Reserved" />
+<Param id="41" name="Reserved" />
+<Param id="42" name="LFO 2 Shape" />
+<Param id="43" name="LFO 2 Rate" />
+<Param id="44" name="LFO 2 Skew" />
+<Param id="45" name="LFO 2 Fade In" />
+<Param id="46" name="LFO 2 Sync" />
+<Param id="47" name="LFO 2 Reset" />
+<Param id="48" name="Reserved" />
+<Param id="49" name="Reserved" />
+<Param id="50" name="Reserved" />
+<Param id="51" name="LFO 3 Shape" />
+<Param id="52" name="LFO 3 Rate" />
+<Param id="53" name="LFO 3 Skew" />
+<Param id="54" name="LFO 3 Fade In" />
+<Param id="55" name="LFO 3 Sync" />
+<Param id="56" name="LFO 3 Reset" />
+<Param id="57" name="Mod Attack" />
+<Param id="58" name="Mod Decay" />
+<Param id="59" name="Mod Sustain" />
+<Param id="60" name="Mod Release" />
+<Param id="61" name="FM Feedback" />
+<Param id="62" name="Voice 1" />
+<Param id="63" name="Voice 2" />
+<Param id="64" name="Voice 3" />
+<Param id="65" name="Voice 4" />
+<Param id="66" name="Voice 5" />
+<Param id="67" name="Voice 6" />
+<Param id="68" name="Voice 7" />
+<Param id="69" name="Voice 8" />
+<Param id="70" name="Arp Range" />
+<Param id="71" name="Arp Rate" />
+<Param id="72" name="Arp Length" />
+<Param id="73" name="Arp Swing" />
+<Param id="74" name="Volume" />
+<Param id="75" name="Voice Spread" />
+<Param id="76" name="Voice Detune" />
+<Param id="77" name="Voices" />
+<Param id="78" name="Glide" />
+<Param id="79" name="FX Phaser Type" />
+<Param id="80" name="FX Phaser Rate" />
+<Param id="81" name="FX Phaser Freq" />
+<Param id="82" name="FX Phaser Fbk" />
+<Param id="83" name="FX Phaser Amt" />
+<Param id="84" name="FX Phaser Depth" />
+<Param id="85" name="FX Delay Type" />
+<Param id="86" name="FX Delay Colour" />
+<Param id="87" name="FX Delay Feedbk" />
+<Param id="88" name="FX Delay Amt" />
+<Param id="89" name="FX Delay Rate-L" />
+<Param id="90" name="FX Delay Rate-R" />
+<Param id="91" name="FX Reverb Type" />
+<Param id="92" name="FX Reverb Damp" />
+<Param id="93" name="FX Reverb Decay" />
+<Param id="94" name="FX Reverb Amt" />
+<Param id="95" name="FX Reverb Predly" />
+<Param id="96" name="FX Reverb Locut" />
+<Param id="97" name="FX Dist Type" />
+<Param id="98" name="FX Dist Colour" />
+<Param id="99" name="FX Dist Drive" />
+<Param id="100" name="FX Dist Amt" />
+<Param id="101" name="FX EQ-1 Type" />
+<Param id="102" name="FX EQ-1 Freq" />
+<Param id="103" name="FX EQ-1 Q" />
+<Param id="104" name="FX EQ-1 Gain" />
+<Param id="105" name="Reserved" />
+<Param id="106" name="FX EQ-2 Type" />
+<Param id="107" name="FX EQ-2 Freq" />
+<Param id="108" name="FX EQ-2 Q" />
+<Param id="109" name="FX EQ-2 Gain" />
+<Param id="110" name="Reserved" />
+</VSTParametersStructure>
+
+</VSTPluginProperties>

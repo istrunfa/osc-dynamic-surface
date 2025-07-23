@@ -1,0 +1,14 @@
+.myButton {
+
+    color : var(--light);
+    background-color: var(--blue);
+    border: 2px solid var(--orange) ;
+    font-size: 20rem;   
+}
+
+.otherRule
+{
+   transform: rotate(180deg);
+   
+
+}

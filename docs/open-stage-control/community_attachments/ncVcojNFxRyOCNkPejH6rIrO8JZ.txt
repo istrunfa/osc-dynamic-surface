@@ -1,0 +1,42 @@
+import json
+
+def generate_dataset():
+    dataset = {}
+    labels = ["C-2", "C-1", "C0", "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8"]
+    total_steps = 128
+    label_index = -1  # Start before the first index since we'll increment initially
+    
+    for step in range(total_steps):
+        # Calculate the percentage as a decimal
+        percentage_value = (step / 127) * 100
+        percentage = f"{percentage_value:.16f}%"
+        
+        # Only update the label every 12 steps
+        if step % 12 == 0:
+            label_index += 1
+            # Ensure we don't go out of the labels range
+            if label_index >= len(labels):
+                label = ""  # No label if we've exceeded the range
+            else:
+                label = labels[label_index]
+        else:
+            label = ""
+        
+        # Calculate the value for "C"
+        value = step / 127
+        
+        # Add to dataset with correct formatting
+        if label:
+            dataset[percentage] = {label: f"{value:.18f}"}
+        else:
+            dataset[percentage] = {"": f"{value:.18f}"}
+    
+    return dataset
+
+# Generate the dataset
+dataset = generate_dataset()
+
+# Convert the dataset to a JSON string with double quotations
+json_output = json.dumps(dataset, indent=2)
+
+print(json_output)
