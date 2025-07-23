@@ -134,7 +134,7 @@ function updateButtons(trackNumbers) {
     widgets.push({
       type: "led",
       id: `led_track_${i}`,
-      address: `/TrackOutputMeterMaxPeakLR/${i}`,
+      address: `/VUMeter${i}`,
       target: "auto",
       width: 10,
       height: 10,
