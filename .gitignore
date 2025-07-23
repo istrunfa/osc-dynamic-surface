@@ -1,5 +1,21 @@
-*.DS_Store
-node_modules/
+# macOS system files
+.DS_Store
+
+# Python
 __pycache__/
-.env
-.venv
+*.pyc
+.venv/
+
+# Node
+node_modules/
+npm-debug.log
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
