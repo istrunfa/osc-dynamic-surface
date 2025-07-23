@@ -2,10 +2,15 @@ let activeTracks = new Set()
 let trackNames = {}
 let trackSelectStates = {}
 let trackColors = {}
+let ignoreVUMeter = true // Toggle to true to ignore VU meter updates
 
 module.exports = {
   oscInFilter: function(data) {
     const { address, args } = data
+    // Drop VUMeter messages if ignoring is enabled
+    if (ignoreVUMeter && address.match(/^\/VUMeter\d+$/)) {
+      return null
+    }
     console.log("Received OSC:", address, args)
 
     const displayMatch = address.match(/^\/DisplayA(\d+)$/)
@@ -81,6 +86,14 @@ module.exports = {
       }
     }
 
+    // Optional: Toggle ignoring VU meters via OSC command
+    if (address === "/ignoreMeters" && args.length > 0) {
+      const arg = args[0]
+      const value = typeof arg === "object" && "value" in arg ? arg.value : arg
+      ignoreVUMeter = !!value
+      console.log("VU Meter processing:", ignoreVUMeter ? "IGNORED" : "ACTIVE")
+    }
+
     return data
   },
 
@@ -120,13 +133,15 @@ function updateButtons(trackNumbers) {
   const widgets = [{
     type: "panel",
     id: "track_buttons",
+    layout: "grid",
     target: "root",
     css: "class:track-button-grid",
+    gridTemplate: "auto / repeat(8, 1fr)",
     widgets: []
   }]
 
   for (let i of trackNumbers.sort((a, b) => a - b)) {
-    widgets[0].widgets.push({
+    const trackPanel = {
       type: "panel",
       id: `panel_track_${i}`,
       target: "track_buttons",
@@ -142,16 +157,21 @@ function updateButtons(trackNumbers) {
           value: trackSelectStates[i] || 0,
           colorWidget: trackColors[i] || undefined,
           css: "class:track-button"
-        },
-        {
-          type: "led",
-          id: `led_track_${i}`,
-          address: `/VUMeter${i}`,
-          target: "auto",
-          css: "class:track-led"
         }
       ]
-    })
+    }
+
+    if (!ignoreVUMeter) {
+      trackPanel.widgets.push({
+        type: "led",
+        id: `led_track_${i}`,
+        address: `/VUMeter${i}`,
+        target: "auto",
+        css: "class:track-led"
+      })
+    }
+
+    widgets[0].widgets.push(trackPanel)
   }
 
   receive("/EDIT", "root", JSON.stringify({ widgets }))
