@@ -10,7 +10,7 @@ let trackSelectStates = {}
 let trackColors = {}
 let trackDisplays = {}
 let previousTrackColors = {} // Track previous button colors
-let ignoreVUMeter = false // Toggle to true to ignore VU meter updates
+let ignoreVUMeter = true // Toggle to true to ignore VU meter updates
 
 let lastVUMeterUpdate = {}
 
