@@ -17,7 +17,7 @@
     "borderRadius": "auto",
     "padding": "auto",
     "html": "",
-    "css": "",
+    "css": "class:root-panel",
     "colorBg": "auto",
     "layout": "default",
     "justify": "start",

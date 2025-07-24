@@ -10,15 +10,24 @@ This project implements a fully dynamic, bidirectional Open Stage Control (OSC) 
 - ✅ Grid-based layout with wrapping and scroll support
 - ✅ Bidirectional OSC message sync with REAPER using CSI
 - ✅ High-performance update logic: separates structure (creation/removal) from visuals (labels, toggle state, color)
+- ✅ Extensive performance optimization for iPad and mobile devices
+- ✅ LED widgets are conditionally created only when enabled
+- ✅ Display updates use /SET for low-latency feedback
+- ✅ Selective OSC filtering (e.g. `/ignoreMeters`, threshold, and framerate)
 
 ## Components
 
 ### ✅ `custom-module.js`
-- Receives OSC from REAPER via CSI
-- Dynamically generates buttons (`btn_track_N`) and LED meters (`led_track_N`) inside the Open Stage Control surface
-- Applies track color to each button using the `colorWidget` property
-- Handles manual toggling and reflects selection back to REAPER using `/SelectN`
-- Optimized performance using `/SET` for label and toggle updates, and conditional `/EDIT` only for color changes
+- Receives and sends OSC from REAPER via CSI
+- Dynamically generates per-track panels (`panel_track_N`) with buttons (`btn_track_N`) and optional LED meters (`led_track_N`)
+- Applies track color using the `colorWidget` property (hex string from `/SelectN/Color`)
+- Track name is shown via `/DisplayAN` as the button label
+- Bidirectional toggling of track selection via `/SelectN`
+- LED meters receive values from `/VUMeterN` (optional, toggleable)
+- Visual updates (labels, toggle, color) use `/SET` for fast, lightweight messaging
+- Structure updates (add/remove tracks) use `/EDIT` only when necessary
+- Global `ignoreVUMeter` flag to suppress VU creation or processing
+- VUMeter optimization: frame throttling (default 33ms) and threshold filtering
 
 ### ✅ `Surface.txt`
 Defines CSI widgets for 128 tracks, using this structure for each:
@@ -55,17 +64,28 @@ The base Open Stage Control template containing the top-level container (`track_
 
 ## Setup
 
-1. Ensure CSI is installed and correctly configured in REAPER
-2. Load the Open Stage Control session using `dynamic_track_list.json`
-3. Load `custom-module.js` in Open Stage Control
-4. Use `Surface.txt` and `Track.zon` in your CSI folder
-5. Launch REAPER and watch Open Stage Control respond in real time
+1. Ensure CSI is installed and correctly configured in REAPER  
+2. Load the Open Stage Control session using `dynamic_track_list.json` (ensure it's empty and structured for dynamic population)  
+3. Load `custom-module.js` in Open Stage Control (Server > Custom Module)  
+4. Use `Surface.txt` and `Track.zon` in your CSI folder  
+5. Launch REAPER and watch Open Stage Control respond in real time  
 
 ## Compatibility
 
 - Tested with Open Stage Control v1.29.6
 - REAPER + CSI extension
 - Works over LAN/WiFi, supports both push and pull feedback
+
+## Performance Optimizations
+
+This setup implements multiple layers of optimization designed to improve responsiveness and lower CPU usage, especially on tablets:
+
+- /SET is used for real-time updates (name, color, toggle state) instead of full /EDIT calls
+- Widgets are only recreated when tracks are added/removed
+- LED widgets are optional and disabled by default via the `ignoreVUMeter` flag
+- VUMeter throttling (`vumeterUpdateInterval`) limits how often LED state is applied (default 33ms)
+- VUMeter thresholding (`vumeterThreshold`) avoids updates for low-level signals
+- All track buttons and displays are rendered inside grid-based panels with optimized CSS layout
 
 ## License
 

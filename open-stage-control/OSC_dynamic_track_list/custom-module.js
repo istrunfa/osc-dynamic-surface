@@ -1,18 +1,39 @@
+const DEBUG = false
+// === Performance tuning constants ===
+const VU_METER_THRESHOLD = 0.06 // Minimum value to trigger VU Meter update
+const VU_METER_THROTTLE_MS = 50 // Milliseconds between allowed VU updates per track
+const VISUAL_UPDATE_DEBOUNCE_MS = 16 // Batch multiple visual updates for smoother performance
+
 let activeTracks = new Set()
 let trackNames = {}
 let trackSelectStates = {}
 let trackColors = {}
+let trackDisplays = {}
 let previousTrackColors = {} // Track previous button colors
 let ignoreVUMeter = false // Toggle to true to ignore VU meter updates
+
+let lastVUMeterUpdate = {}
 
 module.exports = {
   oscInFilter: function(data) {
     const { address, args } = data
-    // Drop VUMeter messages if ignoring is enabled
-    if (ignoreVUMeter && address.match(/^\/VUMeter\d+$/)) {
-      return null
+    // VUMeter throttling and ignore logic
+    const vuMatch = address.match(/^\/VUMeter(\d+)$/)
+    if (vuMatch) {
+      const index = parseInt(vuMatch[1])
+      const now = Date.now()
+      const val = typeof args[0] === "object" ? args[0].value : args[0]
+
+      // Skip very low levels (near silence)
+      if (val < VU_METER_THRESHOLD) return null
+
+      if (ignoreVUMeter) return null
+      if (lastVUMeterUpdate[index] && now - lastVUMeterUpdate[index] < VU_METER_THROTTLE_MS) {
+        return null
+      }
+      lastVUMeterUpdate[index] = now
     }
-    console.log("Received OSC:", address, args)
+    if (DEBUG) console.log("Received OSC:", address, args)
 
     const displayMatch = address.match(/^\/DisplayA(\d+)$/)
     if (displayMatch && args && args.length > 0) {
@@ -42,7 +63,7 @@ module.exports = {
 
       if (typeof value === "number") {
         trackSelectStates[index] = value
-        updateVisuals([...activeTracks])
+        for (const index of activeTracks) queueVisualUpdate(index)
       }
     }
 
@@ -54,7 +75,7 @@ module.exports = {
       if ([r, g, b].every(v => typeof v === "number")) {
         const hex = `#${[r, g, b].map(x => Math.round(x).toString(16).padStart(2, '0')).join('')}`
         trackColors[index] = hex
-        updateVisuals([...activeTracks])
+        for (const index of activeTracks) queueVisualUpdate(index)
       }
     }
 
@@ -68,8 +89,21 @@ module.exports = {
         // Remove alpha if present
         const hex = value.length === 9 ? value.slice(0, 7) : value
         trackColors[index] = hex
-        updateVisuals([...activeTracks])
+        for (const index of activeTracks) queueVisualUpdate(index)
       }
+    }
+
+    // Handle /DisplayB/C/DN for visual info
+    const displayExtraMatch = address.match(/^\/Display([BCD])(\d+)$/)
+    if (displayExtraMatch && args && args.length > 0) {
+      const section = displayExtraMatch[1]
+      const index = parseInt(displayExtraMatch[2])
+      const arg = args[0]
+      const value = typeof arg === "object" && "value" in arg ? arg.value : arg
+
+      if (!trackDisplays[index]) trackDisplays[index] = {}
+      trackDisplays[index][section] = value
+      queueVisualUpdate(index)
     }
 
     // Listen for manual toggles from button widgets
@@ -138,7 +172,10 @@ function updateButtons(trackNumbers) {
     target: "root",
     css: "class:track-button-grid",
     gridTemplate: "auto / repeat(8, 1fr)",
-    widgets: []
+    widgets: [],
+    alphaStroke: 0,
+    innerPadding: false,
+    padding: 1
   }]
 
   for (let i of trackNumbers.sort((a, b) => a - b)) {
@@ -147,6 +184,10 @@ function updateButtons(trackNumbers) {
       id: `panel_track_${i}`,
       target: "track_buttons",
       css: "class:track-panel",
+      layout: "relative",
+      alphaStroke: 0,
+      innerPadding: false,
+      padding: 0,
       widgets: [
         {
           type: "button",
@@ -157,7 +198,9 @@ function updateButtons(trackNumbers) {
           mode: "toggle",
           value: trackSelectStates[i] || 0,
           colorWidget: trackColors[i] || undefined,
-          css: "class:track-button"
+          css: "class:track-button",
+          alphaFillOff: 0.3,
+          wrap: true
         }
       ]
     }
@@ -168,15 +211,38 @@ function updateButtons(trackNumbers) {
         id: `led_track_${i}`,
         address: `/VUMeter${i}`,
         target: "auto",
-        css: "class:track-led"
+        css: "class:track-led",
+        colorWidget: "yellow",
+        lineWidth: 0,
+        padding: 0
       })
     }
+
+    // Restore dispB_track, dispC_track text widgets, with alphaFillOff property, use only CSS class
+    trackPanel.widgets.push(
+      {
+        type: "text",
+        id: `dispB_track_${i}`,
+        css: "class:track-display-b",
+        alphaFillOff: 0
+      },
+      {
+        type: "text",
+        id: `dispC_track_${i}`,
+        css: "class:track-display-c",
+        alphaFillOff: 0
+      }
+    )
 
     widgets[0].widgets.push(trackPanel)
   }
 
   receive("/EDIT", "root", JSON.stringify({ widgets }))
 }
+
+const previousLabels = {}
+const previousValues = {}
+const previousDisplays = {}
 
 function updateVisuals(trackNumbers) {
   for (let i of trackNumbers) {
@@ -185,11 +251,15 @@ function updateVisuals(trackNumbers) {
     const color = trackColors[i] || undefined
     const prevColor = previousTrackColors[i]
 
-    // Always update label and value via /SET
-    receive("/SET", `btn_track_${i}`, {
-      label,
-      value
-    })
+    // Only update label and value if changed
+    if (previousLabels[i] !== label || previousValues[i] !== value) {
+      previousLabels[i] = label
+      previousValues[i] = value
+      receive("/SET", `btn_track_${i}`, {
+        label,
+        value
+      })
+    }
 
     // Only update color if it changed
     if (color !== prevColor) {
@@ -199,5 +269,35 @@ function updateVisuals(trackNumbers) {
         colorWidget: color
       }))
     }
+
+    const displays = trackDisplays[i] || {}
+    if (!previousDisplays[i]) previousDisplays[i] = {}
+
+    if (displays.B !== undefined && displays.B !== previousDisplays[i].B) {
+      previousDisplays[i].B = displays.B
+      receive("/SET", `dispB_track_${i}`, displays.B)
+    }
+    if (displays.C !== undefined && displays.C !== previousDisplays[i].C) {
+      previousDisplays[i].C = displays.C
+      receive("/SET", `dispC_track_${i}`, displays.C)
+    }
+    if (displays.D !== undefined && displays.D !== previousDisplays[i].D) {
+      previousDisplays[i].D = displays.D
+      receive("/SET", `dispD_track_${i}`, displays.D)
+    }
+  }
+}
+
+const queuedVisualUpdates = new Set()
+let updateVisualsTimeout = null
+
+function queueVisualUpdate(index) {
+  queuedVisualUpdates.add(index)
+  if (!updateVisualsTimeout) {
+    updateVisualsTimeout = setTimeout(() => {
+      updateVisuals([...queuedVisualUpdates])
+      queuedVisualUpdates.clear()
+      updateVisualsTimeout = null
+    }, VISUAL_UPDATE_DEBOUNCE_MS)
   }
 }

@@ -11,8 +11,7 @@ from tkinter import ttk, filedialog, messagebox
 WIDGETS = [
     "Select", "Solo", "Mute", "RecordArm", "Monitor", "Fader", "FaderTouched",
     "Pan", "Width", "PanLeft", "PanRight",
-    "TrackOutputMeterPeakLR", "TrackOutputMeterMaxPeakLR",
-    "TrackOutputMeterVU", "TrackInputMeterVU", "TrackInputMeterPeakLR",
+    "VUMeter", "GRMeter",
     "SendVolume", "SendPan", "ReceiveVolume", "ReceivePan", "SendMute",
     "FXParam", "FXOpen", "FXBypass", "FXMenu", "FXNavigate",
     "BankLeft", "BankRight", "PageLeft", "PageRight", "ChannelLeft",
@@ -32,8 +31,8 @@ category_widgets = {
         "Pan", "Width", "PanLeft", "PanRight"
     ],
     "Track Meters": [
-        "TrackOutputMeterPeakLR", "TrackOutputMeterMaxPeakLR",
-        "TrackOutputMeterVU", "TrackInputMeterVU", "TrackInputMeterPeakLR"
+        "VUMeter", "GRMeter",
+
     ],
     "Send / Receive Controls": [
         "SendVolume", "SendPan", "ReceiveVolume", "ReceivePan", "SendMute"
