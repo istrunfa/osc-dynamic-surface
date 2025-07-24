@@ -2,7 +2,8 @@ let activeTracks = new Set()
 let trackNames = {}
 let trackSelectStates = {}
 let trackColors = {}
-let ignoreVUMeter = true // Toggle to true to ignore VU meter updates
+let previousTrackColors = {} // Track previous button colors
+let ignoreVUMeter = false // Toggle to true to ignore VU meter updates
 
 module.exports = {
   oscInFilter: function(data) {
@@ -41,7 +42,7 @@ module.exports = {
 
       if (typeof value === "number") {
         trackSelectStates[index] = value
-        updateButtons([...activeTracks])
+        updateVisuals([...activeTracks])
       }
     }
 
@@ -53,7 +54,7 @@ module.exports = {
       if ([r, g, b].every(v => typeof v === "number")) {
         const hex = `#${[r, g, b].map(x => Math.round(x).toString(16).padStart(2, '0')).join('')}`
         trackColors[index] = hex
-        updateButtons([...activeTracks])
+        updateVisuals([...activeTracks])
       }
     }
 
@@ -67,7 +68,7 @@ module.exports = {
         // Remove alpha if present
         const hex = value.length === 9 ? value.slice(0, 7) : value
         trackColors[index] = hex
-        updateButtons([...activeTracks])
+        updateVisuals([...activeTracks])
       }
     }
 
@@ -175,4 +176,28 @@ function updateButtons(trackNumbers) {
   }
 
   receive("/EDIT", "root", JSON.stringify({ widgets }))
+}
+
+function updateVisuals(trackNumbers) {
+  for (let i of trackNumbers) {
+    const label = trackNames[i] || `Track ${i}`
+    const value = trackSelectStates[i] || 0
+    const color = trackColors[i] || undefined
+    const prevColor = previousTrackColors[i]
+
+    // Always update label and value via /SET
+    receive("/SET", `btn_track_${i}`, {
+      label,
+      value
+    })
+
+    // Only update color if it changed
+    if (color !== prevColor) {
+      previousTrackColors[i] = color
+      receive("/EDIT", `btn_track_${i}`, JSON.stringify({
+        id: `btn_track_${i}`,
+        colorWidget: color
+      }))
+    }
+  }
 }

@@ -9,6 +9,7 @@ This project implements a fully dynamic, bidirectional Open Stage Control (OSC) 
 - ✅ LED meter over each track's button showing signal activity via `/VUMeterN`
 - ✅ Grid-based layout with wrapping and scroll support
 - ✅ Bidirectional OSC message sync with REAPER using CSI
+- ✅ High-performance update logic: separates structure (creation/removal) from visuals (labels, toggle state, color)
 
 ## Components
 
@@ -17,6 +18,7 @@ This project implements a fully dynamic, bidirectional Open Stage Control (OSC) 
 - Dynamically generates buttons (`btn_track_N`) and LED meters (`led_track_N`) inside the Open Stage Control surface
 - Applies track color to each button using the `colorWidget` property
 - Handles manual toggling and reflects selection back to REAPER using `/SelectN`
+- Optimized performance using `/SET` for label and toggle updates, and conditional `/EDIT` only for color changes
 
 ### ✅ `Surface.txt`
 Defines CSI widgets for 128 tracks, using this structure for each:
