@@ -19,7 +19,7 @@
     "html": "",
     "css": "class:root-panel",
     "colorBg": "auto",
-    "layout": "default",
+    "layout": "vertical",
     "justify": "start",
     "gridTemplate": "",
     "contain": true,
@@ -43,7 +43,88 @@
     "onValue": "",
     "onTouch": "",
     "onPreload": "",
-    "widgets": [],
+    "widgets": [
+      {
+        "type": "panel",
+        "id": "transport-bar",
+        "visible": true,
+        "interaction": true,
+        "layout": "horizontal",
+        "css": "transport-bar",
+        "justify": "space-around",
+        "width": "100%",
+        "height": "10%",
+        "top": "90%",
+        "scroll": false,
+        "contain": true,
+        "widgets": [
+          {
+            "type": "button",
+            "id": "play-pause",
+            "icon": "play",
+            "toggle": true,
+            "address": "/Play",
+            "target": "auto"
+          },
+          {
+            "type": "button",
+            "id": "stop",
+            "icon": "stop",
+            "toggle": false,
+            "address": "/Stop",
+            "target": "auto"
+          },
+          {
+            "type": "button",
+            "id": "record",
+            "icon": "circle",
+            "toggle": true,
+            "address": "/Record",
+            "target": "auto"
+          },
+          {
+            "type": "button",
+            "id": "rewind",
+            "icon": "step-backward",
+            "toggle": false,
+            "address": "/Rewind",
+            "target": "auto"
+          },
+          {
+            "type": "button",
+            "id": "fast-forward",
+            "icon": "step-forward",
+            "toggle": false,
+            "address": "/FastForward",
+            "target": "auto"
+          },
+          {
+            "type": "button",
+            "id": "loop",
+            "icon": "repeat",
+            "toggle": true,
+            "address": "/Loop",
+            "target": "auto"
+          },
+          {
+            "type": "button",
+            "id": "return-to-start",
+            "icon": "fast-backward",
+            "toggle": false,
+            "address": "/ReturnToStart",
+            "target": "auto"
+          },
+          {
+            "type": "button",
+            "id": "pre-roll",
+            "icon": "clock",
+            "toggle": true,
+            "address": "/PreRoll",
+            "target": "auto"
+          }
+        ]
+      }
+    ],
     "tabs": []
   }
 }

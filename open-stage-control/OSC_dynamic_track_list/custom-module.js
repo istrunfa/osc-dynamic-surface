@@ -175,7 +175,8 @@ function updateButtons(trackNumbers) {
     widgets: [],
     alphaStroke: 0,
     innerPadding: false,
-    padding: 1
+    padding: 1,
+    height: "90%" // Ensure bottom 10% is free for the transport bar
   }]
 
   for (let i of trackNumbers.sort((a, b) => a - b)) {
