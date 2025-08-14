@@ -63,7 +63,7 @@
         "colorBg": "auto",
         "layout": "grid",
         "justify": "start",
-        "gridTemplate": "repeat(auto-fit, minmax(120px, 1fr))",
+        "gridTemplate": "repeat(auto-fill, 80px) / repeat(8, 1fr)",
         "contain": true,
         "scroll": true,
         "innerPadding": true,
@@ -126,7 +126,8 @@
         "onTouch": "",
         "widgets": [
           {
-            "type": "push",
+            "type": "button",
+            "mode": "push",
             "lock": false,
             "id": "rewind_btn",
             "visible": true,
@@ -172,7 +173,8 @@
             "norelease": false
           },
           {
-            "type": "toggle",
+            "type": "button",
+            "mode": "toggle",
             "lock": false,
             "id": "play_btn",
             "visible": true,
@@ -218,7 +220,8 @@
             "norelease": false
           },
           {
-            "type": "toggle",
+            "type": "button",
+            "mode": "toggle",
             "lock": false,
             "id": "stop_btn",
             "visible": true,
@@ -264,7 +267,8 @@
             "norelease": false
           },
           {
-            "type": "toggle",
+            "type": "button",
+            "mode": "toggle",
             "lock": false,
             "id": "record_btn",
             "visible": true,
@@ -310,7 +314,8 @@
             "norelease": false
           },
           {
-            "type": "push",
+            "type": "button",
+            "mode": "push",
             "lock": false,
             "id": "forward_btn",
             "visible": true,
@@ -356,7 +361,8 @@
             "norelease": false
           },
           {
-            "type": "toggle",
+            "type": "button",
+            "mode": "toggle",
             "lock": false,
             "id": "loop_btn",
             "visible": true,
@@ -402,7 +408,8 @@
             "norelease": false
           },
           {
-            "type": "toggle",
+            "type": "button",
+            "mode": "toggle",
             "lock": false,
             "id": "metronome_btn",
             "visible": true,

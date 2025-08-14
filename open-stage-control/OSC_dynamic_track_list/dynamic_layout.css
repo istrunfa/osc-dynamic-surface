@@ -9,14 +9,19 @@
   stroke-width: 0px;
 }
 
-/* Container that holds all track panels - now takes 90% */
+/* Container that holds all track panels - now takes 90% 
 .track-button-grid {
   width: 100%;
   height: 100%;
   overflow-y: auto;
   background-color: transparent;
   flex-grow: 1;
-}
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 80px; /* Fixed height for better visibility */
+  /* gap: 4px;
+  padding: 8px;
+}*/
 
 /* Transport bar styling */
 .transport-bar {
@@ -45,8 +50,9 @@
 /* Panel that wraps a button and its LED */
 .track-panel {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%; /* Use full grid cell height */
   background-color: transparent;
+  position: relative; /* For absolute positioning of children */
 }
 
 /* Track button (select toggle) */

@@ -165,19 +165,8 @@ module.exports = {
 }
 
 function updateButtons(trackNumbers) {
-  const widgets = [{
-    type: "panel",
-    id: "track_buttons",
-    layout: "grid",
-    target: "root",
-    css: "class:track-button-grid",
-    gridTemplate: "auto / repeat(8, 1fr)",
-    widgets: [],
-    alphaStroke: 0,
-    innerPadding: false,
-    padding: 1,
-    height: "90%" // Ensure bottom 10% is free for the transport bar
-  }]
+  // Create widgets array for the track_buttons panel only
+  const widgets = []
 
   for (let i of trackNumbers.sort((a, b) => a - b)) {
     const trackPanel = {
@@ -235,10 +224,11 @@ function updateButtons(trackNumbers) {
       }
     )
 
-    widgets[0].widgets.push(trackPanel)
+    widgets.push(trackPanel)
   }
 
-  receive("/EDIT", "root", JSON.stringify({ widgets }))
+  // CRITICAL FIX: Only edit track_buttons panel, NOT root
+  receive("/EDIT", "track_buttons", JSON.stringify({ widgets }))
 }
 
 const previousLabels = {}
